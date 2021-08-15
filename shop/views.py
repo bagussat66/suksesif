@@ -1,4 +1,4 @@
-from test_manager.models import EnrolledItem
+from test_manager.models import EnrolledProduct
 from django.contrib.auth import login
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
@@ -19,8 +19,8 @@ from django.views.generic import (
 from django.views.generic.edit import FormView
 from .forms import CheckoutForm
 
-# from .forms import ItemModelForm
-from .models import Address, Coupon, Item, CartItem, Cart, Transaction,CATEGORY_CHOICES
+# from .forms import ProductModelForm
+from .models import Address, Coupon, Product, CartProduct, Cart, Transaction,CATEGORY_CHOICES
 
 import string    
 import random  
@@ -34,9 +34,9 @@ class HomeView(ListView):
     def get_queryset(self):
         category = self.request.GET.get('category')
         if category:
-            return Item.objects.filter(category=category)
+            return Product.objects.filter(category=category)
         else:
-            return Item.objects.all()
+            return Product.objects.all()
 
     def get_context_data(self, **kwargs):
         context = super(HomeView, self).get_context_data(**kwargs)
@@ -58,9 +58,9 @@ class CartSummaryView(LoginRequiredMixin,View):
             messages.error(self.request,"You do not have active orders")
             return redirect("/")
         
-class ItemView(DetailView):
-    model = Item
-    template_name = 'Item.html'
+class ProductView(DetailView):
+    model = Product
+    template_name = 'Product.html'
     
     
 class CheckoutView(LoginRequiredMixin,FormView):
@@ -109,20 +109,20 @@ class TransactionView(View):
         order.ordered = True
         order.transaction = transaction
 
-        for cart_item in order.cart_items.all():
-            cart_item.ordered = True
-            cart_item.save()
+        for cart_product in order.cart_products.all():
+            cart_product.ordered = True
+            cart_product.save()
 
-            enrolled_item,create = EnrolledItem.objects.get_or_create(
-                item=cart_item.item,
+            enrolled_product,create = EnrolledProduct.objects.get_or_create(
+                product=cart_product.product,
                 user=self.request.user,
                 status='A')
             
-            if enrolled_item:
-                enrolled_item.quantity += cart_item.quantity
-                enrolled_item.save()
+            if enrolled_product:
+                enrolled_product.quantity += cart_product.quantity
+                enrolled_product.save()
             else:
-                create.quantity = cart_item.quantity
+                create.quantity = cart_product.quantity
                 create.save()
 
         order.save()
@@ -134,80 +134,80 @@ class TransactionView(View):
 
 @login_required
 def add_to_cart(request, pk):
-    item = get_object_or_404(Item, pk=pk)
-    cart_item,create = CartItem.objects.get_or_create(
-        item=item,
+    product = get_object_or_404(Product, pk=pk)
+    cart_product,create = CartProduct.objects.get_or_create(
+        product=product,
         user=request.user,
         ordered=False)
     order_query = Cart.objects.filter(user=request.user,ordered=False)
-    print(cart_item)
+    print(cart_product)
     if order_query.exists():
         order = order_query[0]
         
-        if order.cart_items.filter(item__pk=item.pk).exists():
-            cart_item.quantity +=1
-            cart_item.save()
-            messages.info(request,"Produk ditambahkan ke keranjang, jumlah saat ini "+str(cart_item.quantity)+".")
+        if order.cart_products.filter(product__pk=product.pk).exists():
+            cart_product.quantity +=1
+            cart_product.save()
+            messages.info(request,"Produk ditambahkan ke keranjang, jumlah saat ini "+str(cart_product.quantity)+".")
         else:
-            order.cart_items.add(cart_item)
+            order.cart_products.add(cart_product)
             messages.info(request,"Produk ditambahkan ke keranjang")
     else:
         order= Cart.objects.create(user=request.user,ordered_date=timezone.now())
         
-        order.cart_items.add(cart_item)
+        order.cart_products.add(cart_product)
         messages.info(request,"Keranjang baru. Produk ditambahkan ke keranjang. ")
     return redirect("shop:order-summary")
 
 @login_required
 def remove_from_cart(request, pk):
-    item = get_object_or_404(Item, pk=pk)
+    product = get_object_or_404(Product, pk=pk)
 
     order_query = Cart.objects.filter(user=request.user,ordered=False)
-    cart_items = CartItem.objects.filter(
-                item=item,
+    cart_products = CartProduct.objects.filter(
+                product=product,
                 user=request.user,
                 ordered=False)
     
     if order_query.exists():
         order = order_query[0]
 
-        if cart_items.exists():
-            cart_item=cart_items[0]
-            print(cart_item)
-            order.cart_items.remove(cart_item)
-            cart_item.delete()
+        if cart_products.exists():
+            cart_product=cart_products[0]
+            print(cart_product)
+            order.cart_products.remove(cart_product)
+            cart_product.delete()
             messages.info(request,"Produk dihapus dari keranjang.")
         else:
             messages.info(request,"Produk tidak ada di keranjang.")
-            return redirect("shop:Item", pk=pk)
+            return redirect("shop:Product", pk=pk)
     else:
         messages.info(request,"Tidak ada pemesanan aktif.")
-        return redirect("shop:Item", pk=pk)
+        return redirect("shop:Product", pk=pk)
     return redirect("shop:order-summary")
 
 @login_required
 def subtract_from_cart(request, pk):
-    item = get_object_or_404(Item, pk=pk)
+    product = get_object_or_404(Product, pk=pk)
 
     order_query = Cart.objects.filter(user=request.user,ordered=False)
-    cart_items = CartItem.objects.filter(
-                item=item,
+    cart_products = CartProduct.objects.filter(
+                product=product,
                 user=request.user,
                 ordered=False)
     
     if order_query.exists():
 
-        if cart_items.exists():
-            cart_item=cart_items[0]
-            cart_item.quantity -=1
-            cart_item.save()
-            messages.info(request,"Produk dikurangkan dari keranjang, jumlah saat ini  "+str(cart_item.quantity)+".")
+        if cart_products.exists():
+            cart_product=cart_products[0]
+            cart_product.quantity -=1
+            cart_product.save()
+            messages.info(request,"Produk dikurangkan dari keranjang, jumlah saat ini  "+str(cart_product.quantity)+".")
         else:
             messages.info(request,"Produk tidak ada di keranjang.")
-            return redirect("shop:Item", pk=pk)
+            return redirect("shop:Product", pk=pk)
     else:
         messages.info(request,"Tidak ada pemesanan aktif.")
-        return redirect("shop:Item", pk=pk)
+        return redirect("shop:Product", pk=pk)
     return redirect("shop:order-summary")
 
 def fetch_coupon(request,code):
@@ -232,40 +232,40 @@ def add_coupon_order(request,code):
 
 
 
-# class ItemListView(ListView):
-#     template_name = 'item/list.html'
-#     queryset = Item.objects.all()
+# class ProductListView(ListView):
+#     template_name = 'product/list.html'
+#     queryset = Product.objects.all()
 
-# class ItemDetailView(DetailView):
-#     template_name = 'item/detail.html'
-#     queryset = Item.objects.all()
+# class ProductDetailView(DetailView):
+#     template_name = 'product/detail.html'
+#     queryset = Product.objects.all()
  
-# class ItemCreateView(CreateView):
-#     template_name = 'item/create.html'
-#     form_class = ItemModelForm
-#     queryset = Item.objects.all()
+# class ProductCreateView(CreateView):
+#     template_name = 'product/create.html'
+#     form_class = ProductModelForm
+#     queryset = Product.objects.all()
 
 #     def get_success_url(self):
-#         return reverse('item:item-list')
+#         return reverse('product:product-list')
 
 #     def form_valid(self,form):
 #         print(form.cleaned_data)
 #         return super().form_valid(form)
 
-# class itemUpdateView(UpdateView):
-#     template_name = 'item/update.html'
-#     form_class = ItemModelForm
-#     queryset = Item.objects.all()
+# class productUpdateView(UpdateView):
+#     template_name = 'product/update.html'
+#     form_class = ProductModelForm
+#     queryset = Product.objects.all()
 #     def get_success_url(self):
-#         return reverse('item:item-list')
+#         return reverse('product:product-list')
 
 #     def form_valid(self,form):
 #         print(form.cleaned_data)
 #         return super().form_valid(form)
 
-# class itemDeleteView(DeleteView):
-#     template_name = 'item/delete.html'
-#     queryset = Item.objects.all()
+# class productDeleteView(DeleteView):
+#     template_name = 'product/delete.html'
+#     queryset = Product.objects.all()
 
 #     def get_success_url(self):
-#         return reverse('item:item-list')
+#         return reverse('product:product-list')

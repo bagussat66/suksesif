@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'crispy_forms',
 
     'core',
+    'blog',
     'shop',
 
     'test_manager',

@@ -1,11 +1,11 @@
 from django.urls import path
-from .views import HomeView, TransactionView,ItemView,CheckoutView,CartSummaryView, add_coupon_order,add_to_cart,remove_from_cart,subtract_from_cart
+from .views import HomeView, TransactionView,ProductView,CheckoutView,CartSummaryView, add_coupon_order,add_to_cart,remove_from_cart,subtract_from_cart
 
 app_name = 'shop'
 
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),
-    path('Item/<int:pk>/', ItemView.as_view(), name='Item'),
+    path('Product/<int:pk>/', ProductView.as_view(), name='Product'),
     path('checkout/', CheckoutView.as_view(), name='checkout'),
     path('order-summary/', CartSummaryView.as_view(), name='order-summary'),
     path('transaction/<transaction_option>', TransactionView.as_view(), name='transaction'),

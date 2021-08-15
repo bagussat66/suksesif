@@ -17,7 +17,7 @@ LABEL_CHOICES = (
     ('D','danger')
 )
 
-class Item(models.Model):
+class Product(models.Model):
     title = models.CharField(max_length=120)
     discount_price = models.IntegerField(blank=True,null=True)
     price = models.IntegerField()
@@ -39,7 +39,7 @@ class Item(models.Model):
             return False
     
     def get_absolute_url(self):
-        return reverse('shop:Item',kwargs={"pk":self.pk})
+        return reverse('shop:Product',kwargs={"pk":self.pk})
    
     def get_add_to_cart_url(self):
         return reverse('shop:add-to-cart',kwargs={"pk":self.pk})
@@ -50,26 +50,26 @@ class Item(models.Model):
     def get_subtract_from_cart_url(self):
         return reverse('shop:remove-from-cart',kwargs={"pk":self.pk})
 
-class CartItem(models.Model):
+class CartProduct(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE, null=True)
-    item = models.ForeignKey(Item, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=1)
     ordered = models.BooleanField(default=False)
 
-    def get_total_item_price(self):
-        return self.quantity * self.item.price
+    def get_total_product_price(self):
+        return self.quantity * self.product.price
 
-    def get_total_discount_item_price(self):
-        if self.item.discounted:
-            return self.quantity * self.item.discount_price
+    def get_total_discount_product_price(self):
+        if self.product.discounted:
+            return self.quantity * self.product.discount_price
         else:
-            return self.quantity * self.item.price
+            return self.quantity * self.product.price
 
     def get_total_amount_saved(self):
-        return self.get_total_item_price()-self.get_total_discount_item_price()
+        return self.get_total_product_price()-self.get_total_discount_product_price()
 
     def __str__(self):
-        return f"{self.quantity} of {self.item.title}"
+        return f"{self.quantity} of {self.product.title}"
 
 class Address(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
@@ -100,7 +100,7 @@ class Coupon(models.Model):
 
 class Cart(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE, null=True)
-    cart_items = models.ManyToManyField(CartItem)
+    cart_products = models.ManyToManyField(CartProduct)
     start_date= models.DateTimeField(auto_now_add=True)
     ordered_date = models.DateTimeField()
     ordered = models.BooleanField(default=False)
@@ -110,8 +110,8 @@ class Cart(models.Model):
 
     def get_total_price(self):
         i = 0
-        for cart_item in self.cart_items.all():
-            i += cart_item.get_total_discount_item_price()
+        for cart_product in self.cart_products.all():
+            i += cart_product.get_total_discount_product_price()
         
         return i
 

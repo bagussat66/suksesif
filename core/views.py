@@ -9,8 +9,8 @@ from django.views.generic import (
 )
 from django.views.generic.edit import FormView
 
-# from .forms import ItemModelForm
-from shop.models import Item,CATEGORY_CHOICES
+# from .forms import ProductModelForm
+from shop.models import Product,CATEGORY_CHOICES
 
 import string    
 import random  
@@ -22,9 +22,9 @@ class HomeView(ListView):
     def get_queryset(self):
         category = self.request.GET.get('category')
         if category:
-            return Item.objects.filter(category=category)
+            return Product.objects.filter(category=category)
         else:
-            return Item.objects.all()
+            return Product.objects.all()
 
     def get_context_data(self, **kwargs):
         context = super(HomeView, self).get_context_data(**kwargs)

@@ -1,4 +1,4 @@
-from .models import EnrolledItem, STATUS_CHOICES
+from .models import EnrolledProduct, STATUS_CHOICES
 from django.shortcuts import render
 from django.views.generic.list import ListView
 
@@ -11,9 +11,9 @@ class TestListView(ListView):
     def get_queryset(self):
         status = self.request.GET.get('status')
         if status:
-            return EnrolledItem.objects.filter(status=status)
+            return EnrolledProduct.objects.filter(status=status)
         else:
-            return EnrolledItem.objects.all()
+            return EnrolledProduct.objects.all()
 
     def get_context_data(self, **kwargs):
         context = super(TestListView, self).get_context_data(**kwargs)

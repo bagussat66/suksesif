@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% load humanize %}
+
+{% block content %}   
+                
+    <!-- Subheader Area
+    ===================================== -->
+    <header class="bg-grad-stellar mt70">
+
+        <div class="container">
+            <div class="row mt20 mb30">
+                <div class="col-md-6 text-left">
+                    <h3 class="color-light text-uppercase animated" data-animation="fadeInUp" data-animation-delay="100">Blog Posts One<small class="color-light alpha7">some notes.</small></h3>
+                </div>
+                <div class="col-md-6 text-right pt35">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog Page</a></li>
+                        <li>Blog Post</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    
+    
+    <!-- Blog Area
+    ===================================== -->
+    <div id="blog" class="bg-gray pt50 pb75">
+        <div class="container">   
+            <nav class="navbar navbar-default mb50">
+                <ul class="nav navbar-nav"> 
+                    <li class="nav-item {% if not category %}active{% endif %}">
+                    <a class="nav-link" href="?category=">Semua</a>
+                    </li>
+                    {% for key,value in CATEGORY_CHOICES %}
+                        <li class="{% ifequal category key %}active{% endifequal %}">
+                        <a href="?category={{key}}">{{value}}</a>
+                        </li>
+                    {% endfor%}
+                </ul>
+                
+                <form name="blog-search" action="#" class="blog-form-search pull-right bg-light">
+                    <input type="text" name="search" class="" placeholder="Dunning Krueger..">
+                    <button type="submit" name="submit" class=""><i class="fa fa-search"></i></button>
+                </form>
+            </nav>
+            
+            <div class="row blog-masonry-3col">
+                {% for object in object_list %}
+                    <!-- Blog Item -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 blog-masonry-item mb25">
+                        <div class="blog-one">
+                            <div class="blog-one-header">
+                                {% if object.image %}
+                                    <img src="{{object.image.url}}" class="img-responsive" alt="image blog">
+                                {% else %}
+                                    <img src="assets/img/blog/img-blog-1.jpg" class="img-responsive" alt="image blog">
+                                {% endif %}
+                            </div>
+                            <div class="blog-one-attrib">                                
+                                <img src="https://lh6.googleusercontent.com/proxy/O7-JEF_MpbuFPhknkvO_IUngr0XkOlQ8B7wK8EFi3LRSKDv_vS0DHdR1wlgi4pe8_b2sU4el-7ELsdzPD7IUSFlXHOIq=s0-d" alt="photo blog" class="blog-author-photo">
+                                <span class="blog-author-name">{{object.user.name}}</span>                                                           
+                                <span class="blog-category bg-green"><a href="#">{{object.get_category_display}}</a></span> 
+                                <span class="blog-date">{{object.timestamp|naturalday}} | </span>                                                          
+                            </div>
+                            <div class="blog-one-body">
+                                <h4 class="blog-title"><a href="#">{{object.title}}</a></h4>
+                                <p class="">
+                                    {{object.subtitle}}
+                                </p>
+                            </div>
+                            <div class="blog-one-footer">
+                                <a href="#">Read More</a>
+                                <i class="fa fa-heart"></i>X Likes
+                                <i class="fa fa-comments"></i><a href="#">X Comments</a>                                 
+                                    
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12 text-center">
+                {% if is_paginated %}
+                    {% if page_obj.has_previous %}
+                        <a class="button-o button-md button-dark hover-ripple-out mt25" href="?page={{page_obj.previous_page_number}}&category={{category}}" aria-label="Previous"><</a>
+                    {% else %}
+                        <a class="button-o button-md button-dark hover-ripple-out mt25 disabled" href="#" aria-label="Previous"><</a>
+                    {% endif %}
+
+                    {% for i in page_obj.paginator.page_range %}
+                        <a class="button-o button-md button-dark hover-ripple-out mt25 {% ifequal i page_obj.number %}active{% endifequal %}" href="?page={{i}}&category={{category}}">{{i}}</a>
+                    {% endfor %}
+
+                    {% if page_obj.has_next %}
+                        <a class="button-o button-md button-dark hover-ripple-out mt25" href="?page={{page_obj.next_page_number}}&category={{category}}" aria-label="Next">></a>
+                    {% else %}  
+                        <a class="button-o button-md button-dark hover-ripple-out mt25 disabled" href="#" aria-label="Next">></a>
+                    {% endif %}
+                {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>       
+    
+{% endblock %}
+        

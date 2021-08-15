@@ -1,12 +1,9 @@
-{% extends 'base_landing.html' %}
+{% extends 'base.html' %}
 
 {% load humanize %}
 
 {% block content %}
-    {% include 'includes/micros/carousel.html' %}
-    {% include 'includes/micros/welcome.html' %}
 
-    
     <!--Main layout-->
     <main class="mt-5 pt-4">
         <div class="container">
@@ -15,7 +12,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark mdb-color lighten-3 mt-3 mb-5">
 
             <!-- Navbar brand -->
-            <span class="navbar-brand">Categories:</span>
+            <span class="navbar-brand">Menu:</span>
 
             <!-- Collapse button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -28,14 +25,12 @@
 
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item {% if not category %}active{% endif %}">
-                <a class="nav-link" href="?category=">All</a>
-                </li>
-                {% for key,value in CATEGORY_CHOICES %}
-                <li class="nav-item {% ifequal category key %}active{% endifequal %}">
-                <a class="nav-link" href="?category={{key}}">{{value}}</a>
+                {% for key,value in STATUS_CHOICES %}
+                <li class="nav-item {% ifequal status key %}active{% endifequal %}">
+                <a class="nav-link" href="?status={{key}}">{{value}}</a>
                 </li>
                 {% endfor%}
+
             </ul>
             <!-- Links -->
 
@@ -50,7 +45,7 @@
         </nav>
         <!--/.Navbar-->
 
-        <!--Section: Products v.3-->
+        <!--Section: Items v.3-->
         <section class="text-center mb-4">
 
             <!--Grid row-->
@@ -65,14 +60,14 @@
 
                 <!--Card image-->
                 <div class="view overlay">
-                    {% if object.image %}
+                    {% if object.item.image %}
                     <img src="{{object.image.url}}" class="card-img-top"
                     alt="">
                     {% else %}
                     <img src="http://openmindspsychology.co.uk/wp-content/uploads/2020/07/psychology-of-the-mind.png" class="card-img-top"
                     alt="">
                     {% endif %}
-                    <a href="{{object.get_absolute_url}}">
+                    <a href="{{object.item.get_absolute_url}}">
                     <div class="mask rgba-white-slight"></div>
                     </a>
                 </div>
@@ -82,30 +77,19 @@
                 <div class="card-body text-center">
                     <!--Category & Title-->
                     <a href="" class="grey-text">
-                    <h5>{{object.get_category_display}}</h5>
+                    <h5>{{object.item.get_category_display}}</h5>
                     </a>
                     <h5>
                     <strong>
-                        <a href="" class="dark-grey-text">{{object.title}}
-                        <p><span class="badge badge-pill {{object.get_label_display}}-color">NEW</span></p>
+                        <a href="" class="dark-grey-text">{{object.item.title}}
+                        
                         </a>
                     </strong>
+                    <p class="grey-text mt-3">{{object.quantity}} Kesempatan</p>
                     </h5>
 
-                    <h4 class="font-weight-bold blue-text">
-                    {% if object.discounted %}
-                    <strong>
-                        <del>Rp.{{object.price|intcomma}}</del>
-                    </strong>
-                        {% if object.is_free %}
-                        <strong>GRATIS!</strong>
-                        {% else %}
-                        <strong>Rp.{{object.discount_price|intcomma}}</strong>
-                        {% endif %}
-                    {% else %}
-                    <strong>Rp.{{object.price|intcomma}}</strong>
-                    {% endif %}
-                    </h4>
+                    <a href="{{object.itemget_add_to_cart_url}}" class="btn btn-primary" role="button" >Masuk Menu Tes <i class="fas fa-external-link-alt ml-1"></i></a>
+                    
 
                 </div>
                 <!--Card content-->
@@ -116,10 +100,16 @@
             </div>
             <!--Grid column-->
             {% endfor %}
+
+            
+
             </div>
             <!--Grid row-->
+
+
         </section>
-        <!--Section: Products v.3-->
+        <!--Section: Items v.3-->
+
         <!--Pagination-->
         {% if is_paginated %}
         <nav class="d-flex justify-content-center wow fadeIn">
@@ -180,24 +170,4 @@
         </div>
     </main>
     <!--Main layout-->
-
-    {% comment %} {% include 'includes/micros/portfolio.html' %}
-    {% include 'includes/micros/services.html' %}
-    {% include 'includes/micros/cta.html' %}
-    {% include 'includes/micros/team.html' %}
-    {% include 'includes/micros/skill.html' %}
-    {% include 'includes/micros/funfact.html' %}
-    {% include 'includes/micros/features.html' %}
-    {% include 'includes/micros/chart.html' %}
-    {% include 'includes/micros/achievement.html' %}
-    {% include 'includes/micros/cta2.html' %}
-    {% include 'includes/micros/content.html' %}
-    {% include 'includes/micros/content2.html' %}
-    {% include 'includes/micros/price.html' %} {% endcomment %}
-    {% include 'includes/micros/shop.html' %}
-    {% include 'includes/micros/blog.html' %}
-    {% comment %} {% include 'includes/micros/newsletter.html' %}
-    {% include 'includes/micros/testimonial.html' %}
-    {% include 'includes/micros/contact.html' %}
-    {% include 'includes/micros/client.html' %} {% endcomment %}
 {% endblock %}

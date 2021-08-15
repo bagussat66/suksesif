@@ -1,0 +1,91 @@
+id;a;b;tendency_a;tendency_b
+1;Saya seorang pekerja keras;Saya bukan seorang pemurung;G;E
+2;Saya suka bekerja lebih baik dari orang lain;Saya suka mengerjakan apa yang sedang saya kerjakan, sampai selesai;A;N
+3;Saya suka menunjukkan caranya melaksanakan sesuatu hal;Saya ingin bekerja sebaik mungkin;P;A
+4;Saya suka berkelakar;Saya senang mengatakan kepada orang lain, apa yang harus dilakukannya;X;P
+5;Saya suka menggabungkan diri dengan kelompok-kelompok;Saya suka diperhatikan oleh kelompok-kelompok;B;X
+6;Saya senang bersahabat intim dengan seseorang;Saya senang bersahabat dengan sekelompok orang;O;B
+7;Saya cepat berubah bila hal itu diperlukan;Saya berusaha untuk intim dengan teman-teman;Z;O
+8;Saya suka membalas dendam bila saya benar-benar disakiti;Saya suka melakukan hal-hal yang baru dan berbeda;K;Z
+9;Saya ingin atasan saya menyukai saya;Saya suka mengatakan kepada orang lain, bila mereka salah;F;K
+10;Saya suka mengikuti perintah-perintah yang diberikan kepada saya;Saya suka menyenangkan hati orang yang memimpin saya;W;F
+11;Saya mencoba sekuat tenaga;Saya seorang yang tertib.;G;C
+12;Saya membuat orang lain melakukan apa yang saya inginkan;Saya bukan seorang yang cepat gusar;L;E
+13;Saya suka mengatakan kepada kelompok, apa yang harus dilakukan;Saya menekuni satu pekerjaan sampai selesai;P;N
+14;Saya ingin tampak bersemangat dan menarik;Saya ingin menjadi sangat sukses;X;A
+15;Saya suka menyelaraskan diri dengan kelompok;Saya suka membantu orang lain menentukan pendapatnya;B;P
+16;Saya cemas kalau orang lain tidak menyukai saya;Saya senang kalau orang-orang memperhatikan saya;O;X
+17;Saya suka mencoba sesuatu yang baru;Saya lebih suka bekerja bersama orang-orang daripada bekerja sendiri;Z;B
+18;Kadang-kadang saya menyalahkan orang lain bila tejadi sesuatu kesalahan;Saya cemas bila seseorang tidak menyukai saya;K;O
+19;Saya suka menyenangkan hati orang yang memimpin saya;Saya suka mencoba pekerjaan-pekerjaan yang baru dan berbeda;F;Z
+20;Saya menyukai petunjuk yang terinci untuk melakukan sesuatu pekerjaan;Saya suka mengatakan kepada orang lain bila mengganggu saya;W;K
+21;Saya selalu mencoba sekuat tenaga;Saya senang bekerja dengan sangat cermat dan hati-hati;G;D
+22;Saya adalah seorang pemimpin yang baik;Saya mengorganisir tugas-tugas secara baik;L;C
+23;Saya mudah menjadi gusar;Saya seorang yang lambat dalam membuat keputusan;I;E
+24;Saya senang mengerjakan beberapa pekerjaan pada waktu yang bersamaan;Bila di dalam kelompok, saya lebih suka diam;X;N
+25;Saya senang bila diundang;Saya ingin melakukan sesuatu lebih baik dari orang lain;B;A
+26;Saya suka berteman intim dengan teman-teman saya;Saya suka memberi nasihat kepada orang lain;O;P
+27;Saya suka melakukan hal-hal yang baru dan berbeda;Saya suka menceritakan keberhasilan saya dalam mengerjakan tugas;Z;X
+28;Bila saya benar, saya suka mempertahankannya mati-matian;Saya suka bergabung ke dalam suatu kelompok;K;B
+29;Saya tidak mau berbeda dengan orang lain;Saya berusaha untuk sangat intim dengan orang-orang;F;O
+30;Saya suka diajari mengenai caranya mengerjakan suatu pekerjaan;Saya mudah merasa jemu (bosan);W;Z
+31;Saya bekerja keras;Saya banyak berpikir dan berencana;G;R
+32;Saya memimpin kelompok;Hal-hal yang kecil (detail) menarik hati saya;L;D
+33;Saya cepat dan mudah mengambil keputusan;Saya melakukan segala sesuatu secara rapih dan teratur;I;C
+34;Tugas-tugas saya kerjakan secara cepat;Saya jarang marah atau sedih;T;E
+35;Saya ingin menjadi bagian dari kelompok;Pada suatu waktu tertentu, saya hanya ingin mengerjakan satu tugas saja;B;N
+36;Saya berusaha untuk intim dengan teman-teman saya;Saya berusaha keras untuk menjadi yang terbaik;O;A
+37;Saya menyukai mode baju baru dan tipe-tipe mobil baru;Saya ingin menjadi penanggung jawab bagi orang-orang lain;Z;P
+38;Saya suka berdebat;Saya ingin diperhatikan;K;X
+39;Saya suka menyenangkan hati orang yang memimpin saya;Saya tertarik menjadi anggota dari suatu kelompok;F;B
+40;Saya senang mengikuti aturan secara tertib;Saya suka orang-orang mengenal saya benar-benar;W;O
+41;Saya mencoba sekuat tenaga;Saya sangat menyenangkan;G;S
+42;Orang lain beranggapan bahwa saya adalah seorang pemimpin yang baik;Saya berpikir jauh ke depan dan terinci;L;R
+43;Seringkali saya memanfaatkan peluang;Saya senang memperhatikan hal-hal sampai sekecil-kecilnya;I;D
+44;Orang lain menganggap saya bekerja cepat;Orang lain menganggap saya dapat melakukan penataan yang rapi dan teratur;T;C
+45;Saya menyukai permainan-permainan dan olahraga;Saya sangat menyenangkan;V;E
+46;Saya senang bila orang-orang dapat intim dan bersahabat;Saya selalu berusaha menyelesaikan apa yang telah saya mulai;O;N
+47;Saya suka bereksperimen dan mencoba sesuatu yang baru;Saya suka mengerjakan pekerjaan-pekerjaan yang sulit dengan baik;Z;A
+48;Saya senang diperlakukan secara adil;Saya senang mengajari orang lain bagaimana caranya mengerjakan sesuatu;K;P
+49;Saya suka mengerjakan apa yang diharapkan dari saya;Saya suka menarik perhatian;F;X
+50;Saya suka petunjuk-petunjuk terinci dalam melakukan sesuatu pekerjaan;Saya senang berada bersama dengan orang-orang lain;W;B
+51;Saya selalu berusaha mengerjakan tugas secara sempurna;Orang lain menganggap, saya tidak mengenal lelah, dalam kerja sehari-hari;G;V
+52;Saya tergolong tipe pemimpin;Saya mudah berteman;L;S
+53;Saya memanfaatkan peluang-peluang;Saya banyak berfikir;I;R
+54;Saya bekerja dengan kecepatan yang mantap dan cepat;Saya senang mengerjakan hal-hal yang detail;T;D
+55;Saya memliki banyak energi untuk permainan-permainan dan olahraga;Saya menempatkan segala sesuatunya secara rapih dan teratur;V;C
+56;Saya bergaul baik dengan semua orang;Saya pandai mengendalikan diri;S;E
+57;Saya ingin berkenalan dengan orang-orang baru dan mengerjakan hal baru;Saya selalu ingin menyelesaikan pekerjaan yang sudah saya mulai;Z;N
+58;Biasanya saya bersikeras mengenai apa yang saya yakini;Biasanya saya suka bekerja keras;K;A
+59;Saya menyukai saran-saran dari orang-orang yang saya kagumi;Saya senang mengatur orang lain;F;P
+60;Saya biarkan orang-orang lain mepengaruhi saya;Saya suka menerima banyak perhatian;W;X
+61;Biasanya saya bekerja sangat keras;Biasanya saya bekerja cepat;G;T
+62;Bila saya berbicara, kelompok akan mendengarkan;Saya terampil mempergunakan alat-alat kerja;L;V
+63;Saya lambat membina persahabatan;Saya lambat dalam mengambil keputusan;I;S
+64;Biasanya saya makan secara cepat;Saya suka membaca;T;R
+65;Saya menyukai pekerjaan yang memungkinkan saya berkeliling;Saya menyukai pekerjaan yang harus dilakukan secara teliti;V;D
+66;Saya berteman sebanyak mungkin;Saya dapat menemukan hal-hal yang telah saya pindahkan;S;C
+67;Perencanaan saya jauh ke masa depan;Saya selalu menyenangkan;R;E
+68;Saya merasa bangga akan nama baik saya;Saya tetap menekuni satu permasalahan sampai ia terselesaikan;K;N
+69;Saya suka menyenangkan hati orang-orang yang saya kagumi;Saya suka menjadi seorang yang berhasil;F;A
+70;Saya senang bila orang-orang lain mengambil keputusan untuk kelompok;Saya suka mengambil keputusan untuk kelompok;W;P
+71;Saya selalu berusaha sangat keras;Saya cepat dan mudah mengambil keputusan;G;I
+72;Biasanya kelompok saya mengerjakan hal-hal yang saya inginkan;Biasanya saya tergesa-gesa;L;T
+73;Saya seringkali merasa lelah;Saya lambat dalam mengambil keputusan;I;V
+74;Saya bekerja secara cepat;Saya mudah mendapat kawan;T;S
+75;Biasanya saya bersemangat atau bergairah;Sebagian besar waktu saya untuk berpikir;V;R
+76;Saya sangat hangat kepada orang-orang;Saya menyukai pekerjaan yang menuntut ketepatan;S;D
+77;Saya banyak berpikir dan merencana;Saya meletakkan segala sesuatu pada tempatnya;R;C
+78;Saya suka tugas yang perlu ditekuni sampai kepada hal sedetilnya;Saya tidak cepat marah;D;E
+79;Saya senang mengikuti orang-orang yang saya kagumi;Saya selalu menyelesaikan pekerjaan yang saya mulai;F;N
+80;Saya menyukai petunjuk-petunjuk yang jelas;Saya suka bekerja keras;W;A
+81;Saya mengejar apa yang saya inginkan;Saya adalah seorang pemimpin yang baik;G;L
+82;Saya membuat orang lain bekerja keras;Saya adalah seorang yang gampangan (tak banyak pertimbangan);L;I
+83;Saya membuat keputusan-keputusan secara cepat;Bicara saya cepat;I;T
+84;Biasanya saya bekerja tergesa-gesa;Secara teratur saya berolahraga;T;V
+85;Saya tidak suka bertemu dengan orang-orang;Saya cepat lelah;V;S
+86;Saya mempunyai banyak sekali teman;Banyak waktu saya untuk berfikir;S;R
+87;Saya suka bekerja dengan teori;Saya suka bekerja sedetil-detilnya;R;D
+88;Saya suka bekerja sampai sedetil-detilnaya;Saya suka mengorganisir pekerjaan saya;D;C
+89;Saya meletakkan segala sesuatu pada tempatnya;Saya selalu menyenangkan;C;E
+90;Saya senang diberi petunjuk mengenai apa yang harus saya lakukan;Saya harus menyelesaikan apa yang sudah saya mulai;W;N

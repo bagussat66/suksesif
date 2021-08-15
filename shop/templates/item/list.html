@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <h1>Panggung Sandiwara</h1>
+    <ul>
+        {% for object in object_list %}
+        <li><a href="{{object.get_absolute_url_detail}}">{{object.title}}</a> |
+        <a href="{{object.get_absolute_url_update}}">Edit</a> |
+        <a href="{{object.get_absolute_url_delete}}">Delete</a></li>
+        {% endfor %}
+    </ul>
+
+    <a href='{{object.get_absolute_url_create}}'>Add New</a>
+{% endblock %}

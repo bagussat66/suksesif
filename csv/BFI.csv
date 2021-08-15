@@ -1,0 +1,121 @@
+﻿id;text;tendency;modifier
+1;Saya tidak ragu curang untuk mencapai sesuatu;A;+
+2;Saya tidak tertarik dengan urusan orang lain;A;-
+3;Saya mencoba lupakan perbuatan buruk orang lain;A;+
+4;Saya menggunakan orang lain untuk kepentingan pribadi;A;-
+5;Saya bangga atas kebaikan saya sendiri;A;+
+6;Saya percaya saya lebih baik dari orang lain;A;-
+7;Saya membalas perlakuan baik orang lain;A;+
+8;Saya tidak peduli perasaan orang lain;A;-
+9;Saya peduli terhadap orang lain;A;+
+10;Saya menghalangi rencana orang lain;A;-
+11;Saya percaya orang lain punya niat baik;A;+
+12;Saya biasa meneriaki ke orang lain;A;-
+13;Saya suka untuk membantu orang lain;A;+
+14;Saya tidak percaya orang lain;A;-
+15;Saya suka pertarungan yang asik;A;+
+16;Saya mengganggap diri saya lebih tinggi;A;-
+17;Saya percaya dengan orang lain;A;+
+18;Saya menghina orang lain;A;-
+19;Saya peduli dengan orang lain yang lebih malang;A;+
+20;Saya memanfaatkan orang lain;A;-
+21;Saya percaya perkataan orang lain;A;+
+22;Saya tidak punya waktu untuk orang lain;A;-
+23;Saya peduli dengan anak yatim piatu;A;+
+24;Saya menganggap perkataan saya lebih benar;A;-
+25;Saya hanya memulai sesuatu ketika sudah siap;C;+
+26;Saya kadang lupa mengembalikan barang ke tempatnya;C;-
+27;Saya menyelesaikan tugas dengan memuaskan;C;+
+28;Saya memiliki kamar yang berantakan;C;-
+29;Saya suka bersih-bersih;C;+
+30;Saya suka ketinggalan barang;C;-
+31;Saya unggul dalam pekerjaan saya;C;+
+32;Saya tidak memberikan sepenuhnya untuk pekerjaan saya;C;-
+33;Saya menjalankan tugas dengan lancar;C;+
+34;Saya bisa melanggar peraturan;C;-
+35;Saya tahu bagaimana caranya menjalankan sesuatu;C;+
+36;Saya hanya menyelesaikan pekerjaan secukupnya;C;-
+37;Saya menepati janji saya;C;+
+38;Saya melanggar janji saya;C;-
+39;Saya melakukan hal lebih dari yang diharapkan;C;+
+40;Saya bertindak lebih dulu ketimbang berpikir;C;-
+41;Saya berkata hal sebenarnya;C;+
+42;Saya mengambil keputusan yang tidak matang;C;-
+43;Saya pekerja keras;C;+
+44;Saya membuang-buang waktu saya;C;-
+45;Saya selalu mempersiapkan diri;C;+
+46;Saya sering terburu-buru;C;-
+47;Saya menjalankan rencana saya;C;+
+48;Saya sering bertindak tanpa berpikir;C;-
+49;Saya suka berkelompok;E;+
+50;Saya suka menyendiri;E;-
+51;Saya antusias;E;+
+52;Saya suka menjauhkan diri dari orang lain;E;-
+53;Saya suka mengemukakan pendapal dalam kelompok;E;+
+54;Saya banyak menyerap informasi dari kelompok;E;-
+55;Saya merasa energik dalam pesta-pesta;E;+
+56;Saya merasa energi saya berkurang dalam pesta-pesta;E;-
+57;Saya mempunyai banyak teman;E;+
+58;Saya hanya berteman dengan beberapa orang tertentu;E;-
+59;Saya mampu menyatakan pikiran saya ;E;+
+60;Saya banyak menyimpan pemikiran saya ;E;-
+61;Saya suka mencari kegiatan;E;+
+62;Saya suka mencari waktu yang tenang;E;-
+63;Saya senang berbicara;E;+
+64;Saya lebih suka mendengarkan;E;-
+65;Saya suka membagikan pengalaman pribadi saya ;E;+
+66;Saya sulit didekati;E;-
+67;Saya ingin selalu bersama orang lain;E;+
+68;Saya lebih menyukai obyektivitas;E;-
+69;Saya mudnh mengekspresikan emosi;E;+
+70;Saya berlatih untuk mengontrol diri;E;-
+71;Saya memberi tanggapan terhadap sesuatu dengan cepat ;E;+
+72;Saya berhati-hati dalam menanggapi sesuatu;E;-
+73;Saya membenci diri sendiri;N;+
+74;Saya orang yang santai;N;-
+75;Saya takut akan banyak hal;N;+
+76;Saya cinta hidup saya;N;-
+77;Saya mudah panik;N;+
+78;Saya tidak mudah tersinggung;N;-
+79;Saya mudah stres;N;+
+80;Saya jarang marah;N;-
+81;Saya sering terlarut dalam kesedihan;N;+
+82;Saya tidak mudah frustasi;N;-
+83;Saya merasa takut atas kemungkinan terburuk;N;+
+84;Saya tidak mudah terdistraksi;N;-
+85;Saya sering bersedih hati;N;+
+86;Saya merasa nyaman dengan diri saya sendiri;N;-
+87;Saya sering mengalami perubahan mood;N;+
+88;Saya jarang sedih;N;-
+89;Saya mudah merasa terancam;N;+
+90;Saya tenang di bawah tekanan;N;-
+91;Saya dipenuhi keraguan;N;+
+92;Saya mampu mengendalikan hasrat diri;N;-
+93;Saya kewalahan atas banyak hal;N;+
+94;Saya memancarkan kebahagiaan;N;-
+95;Saya merasa tidak sanggup menangani masalah;N;+
+96;Saya melihat sisi kehidupan yang baik;N;-
+97;Saya memiliki imajinasi yang jelas;O;+
+98;Saya tidak suka puisi;O;-
+99;Saya suka fantasi yang liar;O;+
+100;Saya tidak suka pergi ke museum seni;O;-
+101;Saya suka membayangkan hal-hal;O;+
+102;Saya jarang menangkap perasaan orang lain;O;-
+103;Saya suka terlarut dalam pikiran;O;+
+104;Saya tidak paham terhadap orang yang emosional;O;-
+105;Saya percaya seni itu penting;O;+
+106;Saya lebih memilih bertahan dengan hal yang saya tahu;O;-
+107;Saya bisa melihat keindahan yang orang lain tidak pahami;O;+
+108;Saya tidak suka perubahan;O;-
+109;Saya menyerap perasaan saya dengan sungguh-sungguh;O;+
+110;Saya sudah terbiasa dengan cara yang biasa;O;-
+111;Saya turut merasakan perasakan orang lain;O;+
+112;Saya menghindari diskusi yang filosofis;O;-
+113;Saya lebih suka variasi ketimbang rutinitas;O;+
+114;Saya merasa sulit memahami ide yang abstrak;O;-
+115;Saya suka membaca materi yang sulit;O;+
+116;Saya tidak tertarik pada diskusi teoritis;O;-
+117;Saya cenderung memilih kandidat politik yang liberal;O;+
+118;Saya cenderung memilih kandidat politik yang konservatif;O;-
+119;Saya percaya tidak ada kebenaran atau kesalahan absolut;O;+
+120;Saya percaya tiap kejahatan harus ditindak;O;-

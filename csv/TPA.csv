@@ -1,0 +1,41 @@
+﻿id;text;a;b;c;d;e;key;stream
+1;Sopir : Mobil;Pesawat : Pilot;Kuda : Pedati;Masinis : Kereta Api;Delman : Kusir;Pilot : Masinis;c;AG
+2;Pikiran : Otak;Buku : Printer;Kata-Kata : Lisan;Komputer : Ketikan;Awan : Langit;Hujan : Uap;a;AG
+3;Dompet : Uang;Gunung : Harimau;Tas Sekolah : Buku;Laut : Garam;Burung : Sangkar;Kandang : Ayam;b;AG
+4;Agama : Atheis;Sandal : Sakit Kaki;Tali : Jatuh;Menikah : Bujang;Antena : Sinyal;Buku : Bodoh;c;AG
+5;Pesawat : Avtur;Radio : Listrik;Sepeda Motor : Bensin;Pedati : Kuda;Hand Phone : Baterai;Tape Mobil : Accu;b;AG
+6;Pari : Ikan;Gandum : Teri;Mangga : Manis;Jambu : Biji;Bayam : Sayur;Burung : Ayam;d;AG
+7;Pizza : Gandum;Rumah : Tukang;Genteng : Tanah Liat;Patung : Pemahat;Gambar : Pelukis;Skripsi : Buku;b;AG
+8;Modern : Tradisional;Roket : Rudal Scud;Ferrari : Fiat;Pesawat : Sepeda Motor;Mobil : Pedati;TV : Media Player;e;AG
+9;Indonesia : Belanda;Malaysia : Inggris;India : Spanyol;Australia : Selandia Baru;Singapura : China;Brundei Darussalam : Timor Leste;a;AG
+10;Karnivora : Singa;Reptilia : Buaya;Manusia : Omnivora;Herbivora : Sapi;Omnivora : Harimau;Herbivora : Omnivora;c;AG
+11; Hewan : Senapan : Berburu;Tanah : petani : sawah;Nasi : sendok : makan;Meja : kursi : duduk;Halaman : ibu : masak;Beras : nasi : jemur;b;AG
+12; Hujan : Kekeringan;Api : kebakaran;Penuh : sesak;Panas : api;Lampu : gelap;Angin : dingin;d;AG
+13; Rekan : Rival;Pendukung : penghambat;Dermawan : serakah;Dokter : pasien;Adat : istiadat;Tradisonal : kontemporer;a;AG
+14; Pakaian : Lemari;Gelap : lampu;Kepala : rambut;Rumah : atap;Air : ember;Api : panas;d;AG
+15; Air : Es ;Salju : Debu;Es : Batu;Uap : Air;Hujan : Basah;Embun : Air;c;AG
+16;Virtual;Maya;Impian;Nyata;Virgin;Hiponema;b;SN
+17;Semiotika;Ilmu tentang tanda;Ilmu seni;Ilmu bahasa;Bahasa simbol;Ungkapan kata;a;SN
+18;Friksi;Membelah;Melepaskan;Perpecahan;Putus Asa;Penggabungan;c;SN
+19;Renovasi;Pemagaran;Pemugaran;Pembongkaran;Peningkatan;Pemekaran;b;SN
+20;Rancu;Canggung;Jorok;Kacau;Tidak wajar;Semu;c;SN
+21;Absurd;Omong kosong;Istilah terkini;Mustahil;Tak terpakai;Masuk akal;e;AN
+22;Prominen;Konsisten;Biasa;Tak setuju;Konsekuen;Perintis;b;AN
+23;Apriori;Unggulan;Tidak Istimewa;Proporsi;Prioritas;Aposteriori;e;AN
+24;Utopis;Komunis;Realistis;Agamis;Sosialis;Demokratis;b;AN
+25; Paradoksal;Berseberangan;Sejalan;Kesempatan;Perumpamaan;Hubungan;b;AN
+26; 31 – 55 – 61 – 34 – 56 – 59 – 37 – 57 – 57 – 40 – 58 – ….;53;55;57;58;60;b;DR
+27; 25 – 13 – 21 – 20 – 18 – 32 – 31 – 23 – 27 – 26 – 28 –….;43;42;40;39;38;e;DR
+28; 90 – 84 – 82 – 84 – 78 – 76 – 78 ….;68;58;76;72;60;d;DR
+29; 7007 – 7106 – 7105 – 7205 – 7204 – 7305 – 7304 – ….;7306;7405;7406;7408;7506;c;DR
+30; 5 – 10 – 8 – 24 – 21 – 84 ….;80;81;168;252;336;a;DR
+31; x = 156788 – 156788/2, dan y = 156788/2;a…;x > y;x < y;x = y;x dan y tidak bisa ditentukan;c;AT
+32; Angka 3 dalam bilangan 453689 bernilai 3.10x, dan y = 5x/25;x > y;x < y;x = y;x dan y tidak bisa ditentukan;2x > 2y;b;AT
+33;  x3 – 43 = 300, dan y + 5x = 42;x > y;x < y;x = y;x dan y tidak bisa ditentukan;2x > 2y;c;AT
+34; x = -(66), dan y = (-6)6;x > y;x < y;x = y;x dan y tidak bisa ditentukan;2x > 2y;b;AT
+35; x = p.1.1, dan y = p+1+1, (p = bilangan positif);x > y;x < y;x = y;x dan y tidak bisa ditentukan;2x > 2y;b;AT
+36; Tidak ada dua perhiasan berlian yang mempunyai kilau yang sama. Cincin X dan Y terbuat dari berlian.;hanya cincin X dan Y yang berbeda kilaunya;Cincin berlian X dan Y mempunyai kilau yang berbeda.;Semua cincin berlian memiliki kilau yang berbeda dengan cincin X dan Y;Ada cincin berlian selain cincin X dan Y yang memiliki kilau.;Semua perhiasan yang sama bentuk dengan cincin X dan Y pasti berkilau.;b;LG
+37; Hanya barang-barang dari plastik yang dijual di toko Kurnia. Tekstil terbuat dari bahan dasar kapas.;Barang plastik hanya dijual di toko Kurnia;Semua barang di toko Kurnia bahan dasarnya plastik;Tidak ada tekstil yang dijual di toko kurnia.;Toko kurnia menjual barang dari kapas dan plastik.;Di toko Kurnia terdapat segalam macam barang .;c;LG
+38; Olah raga adalah aktivitas yang selalu dilakukan Badu setiap hari. Hari ini Badu sakit kepala.;Hari ini Badu tidak berolah raga;Kewajiban Badu setiap hari adalah berolahraga kecuali bila sakit;Hari ini Badu berolahraga walaupun sakit kepala;hampir setiap hari Badu sakit kepala.;Badu tidak suka olah raga saat sakit;c;LG
+39; Noda hitam akan tampak jelas pada pakaian putih. Noda putih akan tampak jelas pada pakaian hitam. Deterjen dapat digunakan untuk menghilangkan noda.;Noda pada pakaian akan tampak jelas.;Tidak mungkin segumpal detergen dapat menghilangkan noda.;Detergen membuat noda putih tampak tidak jelas pada pakaian hitam bernoda putih.;Tidak mungkin hitam menjadi putih;Deterjen menimbulkan noda.;c;LG
+40; Andini selalu pergi berwisata di akhir pekan. Tidak semua tempat wisata terletak di luar kota;Andini selalu pergi berwisata di luar kota;Andini tidak suka berwisata di luar kota;Kadangkala Andini berwisata di dalam kota;Kadangkala Andini tidak berwisata di akhir pekan;Tempat wisata lebih banyak terletak di dalam kota.;c;LG

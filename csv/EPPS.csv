@@ -1,0 +1,226 @@
+﻿id;a;b;tendency_a;tendency_b;constistency
+1;Saya suka menolong teman-teman saya, apabila mereka dalam kesulitan;Saya ingin melakukan apa saja sebaik mungkin;Ach;Ach;Ach
+2;Saya ingin mengetahui bagimana pandangan orang-orang besar, mengenai berbagai masalah yang menarik perhatian saya;Saya ingin menyelesaikan sesuatu yang sangat penting artinya;Def;Ach;
+3;Saya menghendaki bahwa setiap pekerjaan tulis saya teliti, rapi dan tersusun dengan baik;Saya ingin menjadi seorang ahli yang diakui dalam suatu pekerjaan, jabatan atau bidang yang khusus;Ord;Ach;
+4;Saya suka menceritakan cerita-cerita yang lucu dan lelucon-lelucon waktu pesta;Saya ingin menulis roman atau sandiwara yang hebat;Exh;Ach;
+5;Saya ingin dapat berbuat sekehendak hati saya;Saya ingin bisa mengatakan bahwa saya telah melakukan dengan baik suatu pekerjaan yang sulit;Aut;Ach;
+6;Saya ingin dapat memecahkan teka-teki dan persoalan-persoalan yang sukar bagi orang lain;Saya suka mengikuti petunjuk-petunjuk dan melakukan apa yang diharapkan orang lain dari saya;Ach;Def;
+7;Saya ingin mengalami pembaharuan dan perubahan dalam kehidupan saya sehari-hari;Saya suka menyatakan kepada atasan saya bahwa mereka telah melakukan sesuatu pekerjaan yang baik, apabila memang demikian adanya;Def;Def;Def
+8;Saya suka merencanakan dan mengatur detail-detail dari setiap pekerjaan yang harus saya lakukan;Saya suka mengikuti petunjuk-petunjuk dan melakukan apa yang diharapkan orang dari diri saya;Ord;Def;
+9;Saya ingin orang-orang memperhatikan dan memberikan komentar mengenai penampilan saya di depan umum;Saya suka membaca riwayat hidup orang-orang besar;Exh;Def;
+10;Saya suka mengelakkan situasi-situasi yang mengharapkan saya melakukan hal-hal dengan cara yang umum dilakukan orang;Saya suka membaca riwayat hidup orang-orang besar;Aut;Def;
+11;Saya ingin menjadi seorang ahli yang diakui dalam suatu pekerjaan, jabatan atau bidang khusus;Sebelum memulai sesuatu pekerjaan saya ingin pekerjaan itu teratur dan terencanakan;Ach;Ord;
+12;Saya ingin mengetahui bagaimana pandangan orang-orang besar/ahli, mengenai berbagai masalah yang menarik perhatian saya;Jika saya akan bepergian, saya senang apabila segala sesuatunya telah direncanakan sebelumnya;Def;Ord;
+13;Saya suka menyelesaikan setiap pekerjaan atau tugas yang telah saya mulai;Saya ingin barang-barang saya tersusun rapi dan teratur di atas meja atau di dalam ruang kerja saya;Ord;Ord;Ord
+14;Saya suka bercerita kepada orang-orang lain tentang petualangan-petualangan saya dan hal-hal aneh yang pernah saya alami;Saya suka makan saya teratur dan ada waktu-waktu tertentu untuk makan;Exh;Ord;
+15;Saya ingin tidak tergantung dari orang lain dalam menentukan apa yang akan saya lakukan;Saya ingin barang-barang saya tersusun rapi dan teratur di atas meja atau di dalam ruang kerja saya;Aut;Ord;
+16;Saya ingin bisa mengerjakan segala sesuatu lebih baik daripada orang-orang lain;Saya suka menceritakan cerita-cerita lucu dan lelucon-lelucon waktu pesta;Ach;Exh;
+17;Saya suka mengikuti adat-istiadat dan menghindarkan melakukan hal-hal yang mungkin dianggap tidak wajar oleh orang-orang yang saya hormati;Saya suka berbicara tentang hal-hal yang telah saya capai;Def;Exh;
+18;Saya ingin agar hidup saya teratur sedemikian rupa, sehingga berjalan lancar dan tanpa banyak perubahan-perubahan dalam rencana saya;Saya suka bercerita kepada orang-orang lain tentang petualangan-petualangan saya dan hal-hal aneh yang pernah saya alami;Ord;Exh;
+19;Saya suka membaca buku-buku dan sandiwara, terutama yang berkisar sekitar masalah seks;Saya suka menjadi pusat perhatian, apabila saya ada di dalam suatu kelompok;Exh;Exh;Exh
+20;Saya suka mengecam orang-orang yang kedudukannya memegang kekuasaan;Saya suka menggunakan kata-kata yang maknanya seringkali tidak diketahui oleh orang lain;Aut;Exh;
+21;Saya suka menyelesaikan tugas-tugas yang dianggap orang lain sebagai tugas yang membutuhkan keterampilan dan usaha;Saya ingin dapat berbuat sekehendak hati saya;Ach;Aut;
+22;Saya suka memuji orang yang saya kagumi;Saya ingin merasa bebas untuk melakukan apa yang saya kehendaki;Def;Aut;
+23;Saya suka menyimpan surat-surat, bon-bon, dan kertas-kertas lain secara tersusun rapi dan menurut sistem tertentu;Saya ingin tidak tergantung dari orang lain dalam menentukan apa yang akan saya lakukan;Ord;Aut;
+24;Saya suka mengajukan pertanyaan-pertanyaan yang menurut saya tidak seorangpun akan dapat menjawabnya;Saya suka mengecam orang-orang yang kedudukannya memegang kekuasaan;Exh;Aut;
+25;Saya menjadi sedemikian marahnya, sehingga rasanya ingin melemparkan dan merusak barang-barang;Saya suka mengelakkan tanggung jawab dan kewajiban-kewajiban;Aut;Aut;Aut
+26;Saya ingin berhasil dalam apa yang saya lakukan;Saya suka membuat teman-teman baru;Ach;Aff;Aff
+27;Saya suka mengikuti petunjuk-petunjuk dan melakukan apa yang diharapkan orang dari diri saya;Saya ingin mempunyai ikatan perasaan yang kuat dengan teman teman saya;Def;Aff;
+28;Saya menghendaki bahwa setiap pekerjaan tulis saya teliti, rapi dan tersusun dengan baik;Saya ingin membuat teman sebanyak mungkin;Ord;Aff;
+29;Saya suka menceritakan cerita-cerita lucu dan lelucon-lelucon waktu pesta;Saya suka berkirim surat pada teman-teman saya;Exh;Aff;
+30;Saya ingin berbuat sekehendak hati saya;Saya suka dalam melakukan atau menjalani segala sesuatu bersama-sama dengan teman-teman;Aut;Aff;
+31;Saya ingin dapat memecahkan teka teki dan persoalan-persoalan yang sukar bagi orang lain;Saya suka menilai orang berdasarkan sebab-sebab mengapa mereka melakukan sesuatu, bukan berdasar apa yang sesungguhnya mereka lakukan;Ach;Int;
+32;Saya suka menerima pimpinan dari orang-orang yang saya kagumi;Saya ingin memahami bagimana perasaan teman-teman saya dalam menghadapi berbagai masalah;Def;Int;Int
+33;Saya suka makan saya teratur dan ada waktu-waktu tertentu untuk makan;Saya suka mempelajari dan menganalisa tingkah laku orang-orang lain;Ord;Int;
+34;Saya suka mengatakan hal yang dianggap lucu dan cerdas oleh orang lain;Saya suka untuk menempatkan diri saya ditempat orang lain, dan membayangkan bagaimana perasaan saya apabila saya dalam keadaan atau situasi yang sama;Exh;Int;
+35;Saya ingin merasa bebas untuk melakukan apa yang saya kehendaki;Saya suka mengamat-amati bagaimana perasaan orang lain dalam satu keadaan tertentu;Aut;Int;
+36;Saya suka menyelesaikan tugas-tugas yang dianggap orang lain sebagai tugas yang membutuhkan keterampilan dan usaha;Saya ingin teman-teman saya memberi dorongan-dorongan kepada saya bila saya menghadapi kegagalan;Ach;Suc;
+37;Dalam merencanakan sesuatu, saya ingin mendapat saran-saran dari orang-orang yang pendapatnya saya hormati;Saya ingin diperlakukan dengan ramah oleh teman-teman saya;Def;Suc;
+38;Saya ingin agar hidup saya teratur sedemikian rupa sehingga berjalan lancar dan tanpa banyak perubahan-perubahan dalam rencana saya;Saya ingin teman-teman saya merasa kasihan pada saya apabila saya sedang sakit;Ord;Suc;Suc
+39;Saya suka menjadi pusat perhatian, apabila syaa ada dalam suatu kelompok;Saya ingin agar teman-teman saya meributkan tentang diri saya, apabila mendapatkan cedera atau sakit;Exh;Suc;
+40;Saya suka mengelakkan situasi-situasi yang mengharapkan saya melakukan hal-hal dengan cara yang umum dilakukan orang;Saya ingin agar teman-teman saya bersimpati terhadap saya dan menghibur saya bila saya bersusah hati;Aut;Suc;
+41;Saya ingin menulis roman atau sandiwara yang hebat;Apabila saya bekerja dalam suatu panitia, saya ingin ditunjuk atau dipilih sebagai ketuanya;Ach;Dom;
+42;Apabila saya berada dalam kelompok saya suka menerima pimpinan orang lain dalam memutuskan apa yang akan dilakukan oleh kelompok tersebut;Sedapat mungkin saya ingin membimbing dan mengarahkan tindakan atau perbuatan orang lain;Def;Dom;
+43;Saya suka menyimpan surat-surat, bon-bon, dan kertas-kertas lainnya secara tersusun rapi dan menurut sistem tertentu;Saya ingin menjadi salah seorang pemimpin dalam organisasi-organisasi atau kelompok-kelompok dimana saya menjadi anggotanya;Ord;Dom;
+44;Saya suka mengajukan pertanyaan-pertanyaan yang menurut saya tidak seorangpun akan dapat menjawabnya;Saya suka mengatakan pada orang-orang lain bagimana mereka harus melakukan pekerjaan mereka;Exh;Dom;Dom
+45;Saya suka mengelakkan tanggung jawab dan kewajiban-kewajiban;Saya senang untuk diminta menyelesaikan pertentangan-pertentangan atau perselisihan-perselisihan;Aut;Dom;
+46;Saya ingin menjadi ahli yang diakui dalam pekerjaan, jabatan atau bidang khusus;Saya merasa bersalah, apabila saya telah melakukan sesuatu yang saya ketahui keliru;Ach;Aba;
+47;Saya suka membaca riwayat orang-orang besar;Saya merasa bahwa saya harus mengakui hal-hal yang telah saya lakukan dan saya anggap salah;Def;Aba;
+48;Saya suka merencanakan dan mengatur detail-detail dari setiap pekerjaan yang harus saya lakukan;Bila keadaan kurang menguntungkan bagi saya, maka saya merasa bahwa saya harus lebih disalahkan daripada orang lain;Ord;Aba;
+49;Saya suka menggunakan kata-kata yang maknanya seringkali tidak diketahui oleh orang lain;Saya merasa bahwa dalam banyak hal, saya kalah bila dibandingkan dengan orang-orang lain;Exh;Aba;
+50;Saya suka mengecam orang-orang yang kedudukannya memegang kekuasaan;Saya merasa canggung ditengah-tengah orang-orang lain yang saya anggap sebagai atasan saya;Aut;Aba;Aba
+51;Saya suka melakukan pekerjaan apa saja terbaik mungkin;Saya suka menolong orang-orang lain, yang tidak begitu beruntung apabila dibandingkan dengan keadaan saya;Ach;Nur;Nur
+52;Saya ingin mengetahui bagimana pandangan orang-orang besar mengenai berbagai masalah yang menarik perhatian saya;Saya suka bermurah hati terhadap teman teman saya;Def;Nur;
+53;Saya suka membuat rencana sebelum memulai pekerjaan yang sulit;Saya suka memberi pertolongan-pertolongan kecil kepada teman-teman saya;Ord;Nur;
+54;Saya suka bercerita kepada orang-orang lain tentang petualangan-petualangan saya dan hal-hal aneh yang pernah saya alami;Saya ingin teman-teman saya mempercayai saya dan menceritakan kesulitan-kesulitan mereka kepada saya;Exh;Nur;
+55;Saya suka menyatakan pendapat saya tentang berbagai hal;Saya suka memaafkan teman-teman saya yang menyakiti hati saya;Aut;Nur;
+56;Saya ingin bisa mengerjakan segala sesuatu lebih baik daripada orang-orang lain;Saya suka makan di restoran-restoran yang baru atau asing;Ach;Chg;
+57;Saya suka mengikuti adat-istiadat dan menghindarkan melakukan hal-hal yang mungkin dianggap tidak wajar oleh orang-orang yang saya hormati;Saya suka mengikuti mode-mode baru;Def;Chg;Chg
+58;Sebelum memulai sesuatu pekerjaan saya ingin pekerjaan itu teratur dan terencanakan;Saya suka bepergian melihat-lihat daerah pedalaman;Ord;Chg;
+59;Saya ingin orang-orang memperhatikan dan memberikan komentar mengenai penampilan saya di depan umum;Saya suka berkeliling di pedalaman dan tinggal di berbagai tempat;Exh;Chg;
+60;Saya ingin tidak tergantung dari orang lain dalam menentukan apa yang akan saya lakukan;Saya suka mengerjakan hal-hal yang baru dan berbeda-beda;Aut;Chg;
+61;Saya ingin bisa mengatakan bahwa saya telah melakukan dengan baik suatu pekerjaan yang sulit;Saya suka bekerja keras pada tiap pekerjaan yang saya hadapi;Ach;End;
+62;Saya suka menyatakan kepada atasan saya bahwa mereka telah melakukan sesuatu pekerjaan yang baik, apabila memang demikian adanya;Saya ingin menyelesaikan pekerjaan satu-persatu sebelum memulai yang lainnya;Def;End;
+63;Jika saya akan bepergian, saya senang apabila segala sesuatunya telah direncanakan sebelumnya;Saya suka mengerjakan teka-teki atau memecahkan persoalan-persoalan sampai selesai;Ord;End;End
+64;Saya kadang-kadang suka melakukan hal-hal hanya untuk melihat bagaimana pengaruhnya terhadap orang lain;Saya suka bertahan menghadapi suatu pekerjaan atau masalah, sekalipun tampaknya seolah-olah saya tak akan berhasil;Exh;End;
+65;Saya suka melakukan hal-hal yang dianggap orang lain tidak sesuai dengan adat kebiasaan;Saya ingin bekerja berjam-jam tanpa diganggu;Aut;End;
+66;Saya ingin menyelesaikan sesuatu yang sangat penting artinya;Saya mempunyai keinginan untuk mencium orang yang menarik dari lawan jenis saya;Ach;Het;
+67;Saya suka memuji orang yang saya kagumi;Saya ingin dianggap punya daya tarik fisik oleh orang-orang dari lawan jenis saya;Def;Het;
+68;Saya ingin barang-barang saya tersusun rapi dan teratur di atas meja atau di dalam ruang kerja saya;Saya mudah jatuh cinta pada seseorang dari lawan jenis saya;Ord;Het;
+69;Saya suka berbicara tentang hal-hal yang saya capai;Saya suka mendengarkan atau menceritakan lelucon-lelucon yang terutama berkisar soal seks;Exh;Het;Het
+70;Saya ingin melakukan hal-hal dengan cara saya sendiri tanpa menghiraukan apa yang mungkin dipikirkan orang lain;Saya suka membaca buku-buku dan sandiwara, terutama yang berkisar sekitar masalah seks;Aut;Het;
+71;Saya ingin menulis roman atau sandiwara yang hebat;Saya suka menyerang pendirian-pendirian yang bertentangan dengan pendirian saya;Ach;Agg;
+72;Apabila saya berada dalam kelompok saya suka menerima pimpinan orang lain dalam memutuskan apa yang akan dilakukan oleh kelompok tersebut;Saya rasanya ingin mengecam seseorang di muka umum bila orang itu patut menerimanya;Def;Agg;
+73;Saya ingin agar hidup saya teratur sedemikian rupa, sehingga berjalan lancar dan tanpa banyak perubahan-perubahan dalam rencana saya;Saya menjadi sedemikian marahnya, sehingga rasanya ingin melemparkan dan merusak barang-barang;Ord;Agg;
+74;Saya suka mengajukan pertanyaan-pertanyaan yang menurut saya tidak seorangpun akan dapat menjawabnya;Saya suka mengatakan kepada orang-orang lain bagimana pendapat saya mengenai mereka;Exh;Agg;
+75;Saya suka mengelakkan tanggung jawab dan kewajiban-kewajiban;Saya rasanya ingin memperolok-olok orang-orang yang melakukan hal-hal yang saya anggap bodoh;Aut;Agg;Agg
+76;Saya ingin loyal terhadap teman-teman saya;Saya ingin melakukan pekerjaan apa saja sebaik mungkin;Aff;Ach;
+77;Saya suka mengamat-amati bagaimana perasaan orang lain dalam suatu keadaan tertentu;Saya ingin bisa mengatakan bahwa saya telah melakukan dengan baik sesuatu pekerjaan yang sulit;Int;Ach;
+78;Saya ingin teman-teman memberi dorongan kepada saya bila saya menghadapi kegagalan;Saya ingin berhasil dalam apa yang saya lakukan;Suc;Ach;
+79;Saya ingin menjadi salah seorang pemimpin dalam organisasi-organisasi atau kelompok-kelompok dimana saya menjadi anggotanya;Saya ingin bisa mengerjakan segala sesuatu lebih baik daripada orang-orang lain;Dom;Ach;
+80;Bila keadaan kurang menguntungkan bagi saya, maka saya merasa bahwa saya harus lebih disalahkan daripada orang lain;Saya suka memecahkan teka teki dan persoalan-persoalan yang sukar bagi orang lain;Aba;Ach;
+81;Saya suka melakukan sesuatu untuk teman-teman saya;Dalam merencanakan sesuatu, saya ingin mendapat saran-saran dari orang-orang yang pendapatnya saya hormati;Aff;Def;
+82;Saya suka untuk menempatkan diri saya ditempat orang lain, dan membayangkan bagaimana perasaan saya apabila saya dalam keadaan atau situasi yang sama;Saya suka menyatakan kepada atasan saya bahwa mereka telah melakukan sesuatu pekerjaan yang baik, apabila memang demikian adanya;Int;Def;
+83;Saya ingin agar teman-teman saya menunjukkan simpati dan pengertian bila saya mengalami kesukaran-kesukaran;Saya suka menerima pempinan dari orang-orang yang saya kagumi;Suc;Def;
+84;Apabila saya bekerja dalam suatu panitia, saya ingin ditunjuk atau dipilih sebagai ketuanya;Apabila saya berada dalam kelompok saya suka menerima pimpinan orang lain dalam memutuskan apa yang akan dilakukan oleh kelompok tersebut;Dom;Def;
+85;Apabila saya melakukan sesuatu hal yang salah, saya merasa bahwa untuk itu saya harus dihukum;Saya suka mengikuti adat-istiadat dan menghindarkan melakukan hal-hal yang mungkin dianggap tidak wajar oleh orang-orang yang saya hormati;Aba;Def;
+86;Saya suka dalam melakukan atau menjalani segala sesuatu bersama-sama dengan teman-teman;Saya suka membuat perencanaan sebelum mulai pekerjaan yang sulit;Aff;Ord;
+87;Saya ingin memahami bagimana perasaan teman-teman saya dalam menghadapi berbagai masalah;Jika saya akan bepergian, saya senang apabila segala sesuatunya telah direncanakan sebelumnya;Int;Ord;
+88;Saya ingin diperlakukan dengan ramah oleh teman-teman saya;Sebelum memulai sesuatu pekerjaan saya ingin pekerjaan itu teratur dan terencanakan;Suc;Ord;
+89;Saya ingin dianggap sebagai pemimpin oleh orang-orang lain;Saya suka menyimpan surat-surat, bon-bon, dan kertas-kertas lain secara tersusun rapi dan menurut sistem tertentu;Dom;Ord;
+90;Saya merasa bahwa pilu hati dan kesusahan yang telah saya alami, lebih banyak membawa kebaikan daripada kerugian bagi saya;Saya ingin agar hidup saya teratur sedemikian rupa, sehingga berjalan lancar dan tanpa banyak perubahan-perubahan dalam rencana saya;Aba;Ord;
+91;Saya ingin mempunyai ikatan perasaan yang kuat dengan teman teman saya;Saya suka mengatakan hal yang dianggap lucu dan cerdas oleh orang lain;Aff;Exh;
+92;Saya suka merenungkan kepribadian teman-teman saya dan mencoba mengerti apa yang menyebabkan mereka mempunyai kepribadian yang demikian;Saya kadang-kadang suka melakukan hal-hal hanya untuk melihat bagaimana pengaruhnya terhadap orang lain;Int;Exh;
+93;Saya ingin agar teman-teman saya meributkan tentang diri saya, apabila mendapatkan cedera atau sakit;Saya suka berbicara tentang hal-hal yang telah saya capai;Suc;Exh;
+94;Saya suka mengatakan pada orang-orang lain bagimana mereka harus melakukan pekerjaan mereka;Saya suka menjadi pusat perhatian, apabila saya ada di dalam suatu kelompok;Dom;Exh;
+95;Saya merasa canggung ditengah-tengah orang-orang lain yang saya anggap sebagai atasan saya;Saya suka menggunakan kata-kata yang maknanya seringkali tidak diketahui oleh orang lain;Aba;Exh;
+96;Saya lebih suka mengerjakan sesuatu bersama-sama dengan teman-teman saya daripada sendirian;Saya suka menyatakan pendapat saya tentang berbagai hal;Aff;Aut;
+97;Saya suka mempelajari dan menganalisa tingkah laku orang-orang lain;Saya suka melakukan hal-hal yang dianggap orang lain tidak sesuai dengan adat kebiasaan;Int;Aut;
+98;Saya ingin teman-teman saya merasa kasihan pada saya apabila saya sedang sakit;Saya suka mengelakkan situasi-situasi yang mengharapkan saya melakukan hal-hal dengan cara yang umum dilakukan orang;Suc;Aut;
+99;Sedapat mungkin saya ingin membimbing dan mengarahkan tindakan atau perbuatan orang lain;Saya ingin melakukan hal-hal dengan cara saya sendiri tanpa menghiraukan apa yang mungkin dipikirkan orang lain;Dom;Aut;
+100;Saya merasa bahwa dalam banyak hal, saya kalah bila dibandingkan dengan orang-orang lain;Saya suka mengelakkan tanggung jawab dan kewajiban-kewajiban;Aba;Aut;
+101;Saya ingin berhasil dalam apa yang saya lakukan;Saya suka membuat teman-teman baru;Aff;Aff;Aff
+102;Saya suka menganalisa perasaan-perasaan saya dan sebab-sebab mengapa saya melakukan sesuatu;Saya ingin melakukan sesuatu untuk teman-teman saya;Int;Aff;
+103;Saya ingin agar teman-teman saya membantu saya bila saya mengalami kesulitan;Saya suka melakukan sesuatu untuk teman-teman saya;Suc;Aff;
+104;Saya suka memperdebatkan pendirian saya bila diserang oleh orang-orang lain;Saya suka berkirim surat kepada teman-teman saya;Dom;Aff;
+105;Saya merasa bersalah, apabila saya telah melakukan sesuatu yang saya ketahui keliru;Saya ingin mempunyai ikatan perasaan yang kuat dengan teman teman saya;Aba;Aff;
+106;Saya suka dalam melakukan atau menjalani segala sesuatu bersama-sama dengan teman-teman;Saya suka menganalisa perasaan-perasaan saya dan sebab-sebab mengapa saya melakukan sesuatu;Aff;Int;
+107;Saya suka menerima pimpinan dari orang-orang yang saya kagumi;Saya ingin memahami bagimana perasaan teman-teman saya dalam menghadapi berbagai masalah;Int;Int;Int
+108;Saya ingin agar teman-teman saya dengan gembira memberikan pertolongan-pertolongan kecil kepada saya;Saya suka menilai orang berdasarkan sebab-sebab mengapa mereka melakukan sesuatu, bukan berdasar apa yang sesungguhnya mereka lakukan;Suc;Int;
+109;Bila saya berada dalam suatu kelompok, saya ingin menentukan apa yang akan kami kerjakan;Saya suka meramalkan bagimana teman-teman saya akan bertindak dalam berbagai situasi;Dom;Int;
+110;Saya lebih suka mengalah dan menghindarkan perkelahian daripada memaksakan kemauan saya;Saya suka menganalisa perasaan-perasaan orang lain dan sebab-sebab mengapa mereka melakukan sesuatu;Aba;Int;
+111;Saya suka membuat teman-teman baru;Saya ingin agar teman-teman saya membantu saya bila saya mengalami kesulitan;Aff;Suc;
+112;Saya suka menilai orang berdasarkan sebab-sebab mengapa mereka melakukan sesuatu, bukan berdasar apa yang sesungguhnya mereka lakukan;Saya ingin teman-teman saya banyak menujukkan rasa sayang mereka terhadap saya;Int;Suc;
+113;Saya ingin agar hidup saya teratur sedemikian rupa, sehingga berjalan lancar dan tanpa banyak perubahan-perubahan dalam rencana saya;Saya ingin teman-teman saya merasa kasihan pada saya apabila saya sedang sakit;Suc;Suc;Suc
+114;Saya senang untuk diminta menyelesaikan pertentangan-pertentangan atau perselisihan-perselisihan;Saya ingin agar teman-teman saya dengan gembira memberikan pertolongan-pertolongan kecil kepada saya;Dom;Suc;
+115;Saya merasa bahwa saya harus mengakui hal-hal yang telah saya lakukan dan saya anggap salah;Saya ingin agar teman-teman saya bersimpati terhadap saya dan menghibur saya bila saya bersusah hati;Aba;Suc;
+116;Saya lebih suka mengerjakan sesuatu bersama-sama dengan teman-teman saya daripada sendirian;Saya suka memperdebatkan pendirian saya bila diserang oleh orang-orang lain;Aff;Dom;
+117;Saya suka merenungkan kepribadian teman-teman saya dan mencoba mengerti apa yang menyebabkan mereka mempunyai kepribadian yang demikian;Saya ingin dapat membujuk dan mempengaruhi orang lain untuk melakukan apa yang saya kehendaki;Int;Dom;
+118;Saya ingin agar teman-teman saya bersimpati terhadap saya dan menghibur saya bila saya bersusah hati;Bila saya berada dalam suatu kelompok, saya ingin menentukan apa yang akan kami kerjakan;Suc;Dom;
+119;Saya suka mengajukan pertanyaan-pertanyaan yang menurut saya tidak seorangpun akan dapat menjawabnya;Saya suka menyatakan kepada orang lain bagaimana mereka harus melakukan pekerjaan mereka;Dom;Dom;Dom
+120;Saya merasa canggung ditengah-tengah orang-orang lain yang saya anggap sebagai atasan saya;Sedapat mungkin saya ingin membimbing dan mengarahkan tindakan atau perbuatan orang lain;Aba;Dom;
+121;Saya suka bergaul dalam kelompok yang para anggotanya akrab dan bersahabat satu sama lainnya;Saya merasa bersalah, apabila saya telah melakukan sesuatu yang saya ketahui keliru;Aff;Aba;
+122;Saya suka menganalisa perasaan-perasaan orang lain dan sebab-sebab mengapa mereka melakukan sesuatu;Saya merasa sedih akan ketidakmampuan saya untuk menghadapi berbagai macam keadaan;Int;Aba;
+123;Saya ingin teman-teman saya merasa kasihan pada saya apabila saya sedang sakit;Saya lebih suka mengalah dan menghindarkan perkelahian daripada memaksakan kemauan saya;Suc;Aba;
+124;Saya ingin dapat membujuk dan mempengaruhi orang lain untuk melakukan apa yang saya kehendaki;Saya merasa sedih akan ketidakmampuan saya untuk menghadapi berbagai macam keadaan;Dom;Aba;
+125;Saya suka mengecam orang-orang yang kedudukannya memegang kekuasaan;Saya merasa canggung ditengah-tengah orang-orang lain yang saya anggap sebagai atasan saya;Aba;Aba;Aba
+126;Saya suka bergaul dalam kelompok yang para anggotanya akrab dan bersahabat satu sama lainnya;Saya suka menolong teman-teman saya, apabila mereka dalam kesulitan;Aff;Nur;
+127;Saya suka menganalisa perasaan-perasaan saya dan sebab-sebab mengapa saya melakukan sesuatu;Saya suka menunjukkan simpati saya kepada teman-teman saya bila mereka mendapat cedera atau sakit;Int;Nur;
+128;Saya ingin agar teman-teman saya membantu saya bila saya mengalami kesulitan;Saya suka memperlakukan orang lain dengan ramah dan simpatik;Suc;Nur;
+129;Saya ingin menjadi salah seorang pemimpin dalam organisasi-organisasi kelompok yang saya masuki;Saya suka menunjukkan simpati saya kepada teman-teman saya bila mereka mendapat cedera atau sakit;Dom;Nur;
+130;Saya merasa bahwa pilu hati dan kesusahan yang telah saya alami, lebih banyak membawa kebaikan daripada kerugian bagi saya;Saya suka berlaku ramah tehadap teman-teman saya;Aba;Nur;
+131;Saya lebih suka mengerjakan sesuatu bersama-sama dengan teman-teman saya daripada sendirian;Saya suka bereksperimen dalam mencoba hal-hal yang baru;Aff;Chg;
+132;Saya suka merenungkan kepribadian teman-teman saya dan mencoba mengerti apa yang menyebabkan mereka mempunyai kepribadian yang demikian;Saya suka mencoba pekerjaan yang baru dan berbeda-beda, daripada melakukan pekerjaan yang sama dan terus menerus;Int;Chg;
+133;Saya ingin agar teman-teman saya menunjukkan simpati dan pengertian bila saya mengalami kesukaran-kesukaran;Saya suka bertemu dengan orang-orang baru;Suc;Chg;
+134;Saya suka memperdebatkan pendirian saya bila diserang oleh orang-orang lain;Saya ingin mengalami pembaharuan dan perubahan dalam kehidupan saya sehari hari;Dom;Chg;
+135;Saya lebih suka mengalah dan menghindarkan perkelahian daripada memaksakan kemauan saya;Saya suka berkeliling di pedalaman dan tinggal di berbagai tempat;Aba;Chg;
+136;Saya suka melakukan sesuatu untuk teman-teman saya;Bila saya harus melakukan suatu tugas, saya ingin mengerjakannya sampai selesai;Aff;End;
+137;Saya suka menganalisa perasaan-perasaan orang lain dan sebab-sebab mengapa mereka melakukan sesuatu;Saya ingin menghindarkan gangguan bila saya sedang bekerja;Int;End;
+138;Saya suka memberi pertolongan-pertolongan kecil kepada teman-teman saya;Saya suka bekerja sampai jauh malam untuk menyelesaikan suatu pekerjaan;Suc;End;
+139;Saya ingin dianggap sebagai pemimpin oleh orang-orang lain;Saya ingin bekerja berjam-jam tanpa diganggu;Dom;End;
+140;Apabila saya melakukan sesuatu hal yang salah, saya merasa bahwa untuk itu saya harus dihukum;Saya suka bertahan menghadapi suatu pekerjaan atau masalah, sekalipun tampaknya seolah-olah saya tak akan berhasil;Aba;End;
+141;Saya ingin loyal terhadap teman-teman saya;Saya suka bepergian dengan lawan jenis saya yang menarik;Aff;Het;
+142;Saya suka meramalkan bagaimana teman-teman saya akan bertindak dalam berbagai situasi;Saya suka ikut serta dalam diskusi-diskusi tentang seks dan aktifitas seksuil;Int;Het;
+143;Saya ingin teman teman saya menunjukkan rasa sayang mereka terhadap saya;Saya suka nafsu saya terangsang;Suc;Het;
+144;Bila saya berada dalam suatu kelompok, saya ingin menentukan apa yang akan kami kerjakan;Saya suka ikut dalam aktivitas-aktivitas sosial bersama-sama dengan orang-orang dari lawan jenis saya;Dom;Het;
+145;Saya merasa sedih akan ketidakmampuan saya untuk menghadapi berbagai macam keadaan;Saya suka membaca buku-buku dan sandiwara, terutama yang berkisar sekitar masalah seks;Aba;Het;
+146;Saya suka berkirim surat kepada teman-teman saya;Saya suka membaca berita-berita surat kabar tentang pembunuhan-pembunuhan dan lain-lain perbuatan kekerasan;Aff;Agg;
+147;Saya suka meramalkan bagimana teman-teman saya akan bertindak dalam berbagai situasi;Saya suka menyerang pendirian-pendirian yang bertentangan dengan pendirian saya;Int;Agg;
+148;Saya ingin agar teman-teman saya meributkan tentang diri saya, apabila mendapatkan cedera atau sakit;Saya rasanya ingin menyalahkan orang lain bila keadaannya kurang menguntungkan saya;Suc;Agg;
+149;Saya suka menyatakan kepada orang lain bagaimana mereka harus melakukan pekerjaan mereka;Rasa rasanya ingin membalas dendam bila seseorang menghina saya;Dom;Agg;
+150;Saya merasa bahwa dalam banyak hal, saya kalah bila dibandingkan dengan orang-orang lain;Saya rasanya ingin menghardik orang lain bila saya berbeda pendapat dengan mereka;Aba;Agg;Ach
+151;Saya suka menolong teman-teman saya, apabila mereka dalam kesulitan;Saya suka melakukan pekerjaan apa saja sebaik mungkin;Nur;Ach;
+152;Saya suka bepergian melihat-lihat daerah pedalaman;Saya suka menyelesaikan tugas-tugas yang dianggap orang lain sebagai tugas yang membutuhkan keterampilan dan usaha;Chg;Ach;
+153;Saya suka bekerja keras pada tiap pekerjaan yang saya hadapi;Saya ingin menyelesaikan sesuatu yang sangat penting artinya;End;Ach;
+154;Saya suka bepergian dengan lawan jenis saya yang menarik;Saya ingin berhasil dalam apa yang saya lakukan;Het;Ach;
+155;Saya suka membaca berita-berita surat kabar tentang pembunuhan-pembunuhan dan lain-lain perbuatan kekerasan;Saya ingin menulis roman atau sandiwara yang hebat;Agg;Ach;
+156;Saya suka memberi pertolongan-pertolongan kecil kepada teman-teman saya;Dalam merencanakan sesuatu, saya ingin mendapat saran-saran dari orang-orang yang pendapatnya saya hormati;Nur;Def;Def
+157;Saya ingin mengalami pembaharuan dan perubahan dalam kehidupan saya sehari-hari;Saya suka menyatakan kepada atasan saya bahwa mereka telah melakukan sesuatu pekerjaan yang baik, apabila memang demikian adanya;Chg;Def;
+158;Saya suka bekerja sampai jauh malam untuk menyelesaikan suatu pekerjaan;Saya suka memuji orang yang saya kagumi;End;Def;
+159;Saya suka nafsu saya terangsang;Saya suka menerima pimpinan dari orang-orang yang saya kagumi;Het;Def;
+160;Rasa rasanya ingin membalas dendam bila seseorang menghina saya;Apabila saya berada dalam kelompok saya suka menerima pimpinan orang lain dalam memutuskan apa yang akan dilakukan oleh kelompok tersebut;Agg;Def;
+161;Saya suka bermurah hati terhadap teman-teman saya;Saya suka membuat rencana sebelum memulai pekerjaan yang sulit;Nur;Ord;
+162;Saya suka bertemu dengan orang-orang baru;Saya menghendaki bahwa setiap pekerjaan tulis saya teliti, rapi dan tersusun dengan baik;Chg;Ord;Ord
+163;Saya suka menyelesaikan setiap pekerjaan atau tugas yang telah saya mulai;Saya ingin barang-barang saya tersusun rapi dan teratur di atas meja atau di dalam ruang kerja saya;End;Ord;
+164;Saya ingin dianggap punya daya tarik fisik oleh orang-orang dari lawan jenis saya;Saya suka merencanakan dan mengatur detail-detail dari setiap pekerjaan yang harus saya lakukan;Het;Ord;
+165;Saya suka mengatakan kepada orang-orang lain bagaimana pendapat saya mengenai mereka;Saya suka makan saya teratur dan ada waktu-waktu tertentu untuk makan;Agg;Ord;
+166;Saya suka berlaku ramah tehadap teman-teman saya;Saya suka mengatakan hal yang dianggap lucu dan cerdas oleh orang lain;Nur;Exh;
+167;Saya suka mencoba pekerjaan yang baru dan berbeda-beda, daripada melakukan pekerjaan yang sama dan terus menerus;Saya kadang-kadang suka melakukan hal-hal hanya untuk melihat bagaimana pengaruhnya terhadap orang lain;Chg;Exh;
+168;Saya suka bertahan menghadapi suatu pekerjaan atau masalah, sekalipun tampaknya seolah-olah saya tak akan berhasil;Saya ingin orang-orang memperhatikan dan memberikan komentar mengenai penampilan saya di depan umum;End;Exh;Exh
+169;Saya suka membaca buku-buku dan sandiwara, terutama yang berkisar sekitar masalah seks;Saya suka menjadi pusat perhatian, apabila saya ada di dalam suatu kelompok;Het;Exh;
+170;Saya rasanya ingin menyalahkan orang lain bila keadaannya kurang menguntungkan saya;Saya suka mengajukan pertanyaan-pertanyaan yang menurut saya tidak seorangpun akan dapat menjawabnya;Agg;Exh;
+171;Saya suka menunjukkan simpati saya kepada teman-teman saya bila mereka mendapat cedera atau sakit;Saya suka mengatakan pendapat saya tentang berbagai hal;Nur;Aut;
+172;Saya suka makan di restoran-restoran yang baru atau asing;Saya suka melakukan hal-hal yang dianggap orang lain tidak sesuai dengan adat kebiasaan;Chg;Aut;
+173;Saya ingin menyelesaikan pekerjaan satu persatu sebelum memulai yang lain;Saya ingin merasa bebas untuk melakukan apa yang saya kehendaki;End;Aut;
+174;Saya suka ikut serta dalam diskusi-diskusi tentang seks dan aktifitas seksual;Saya ingin melakukan hal-hal dengan cara saya sendiri tanpa menghiraukan apa yang mungkin dipikirkan orang lain;Het;Aut;Aut
+175;Saya menjadi sedemikian marahnya, sehingga rasanya ingin melemparkan dan merusak barang-barang;Saya suka mengelakkan tanggung jawab dan kewajiban-kewajiban;Agg;Aut;
+176;Saya suka menolong teman-teman saya, apabila mereka dalam kesulitan;Saya ingin loyal terhadap teman-teman saya;Nur;Aff;
+177;Saya suka mengerjakan hal-hal yang baru dan berbeda-beda;Saya suka membuat teman teman baru;Chg;Aff;
+178;Bila saya harus melakukan suatu tugas, saya ingin mengerjakannya sampai selesai;Saya suka bergaul dalam kelompok yang para anggotanya akrab dan bersahabat satu sama lainnya;End;Aff;
+179;Saya suka bepergian dengan lawan jenis saya yang menarik;Saya ingin membuat teman sebanyak mungkin;Het;Aff;
+180;Saya suka menyerang pendirian-pendirian yang bertentangan dengan pendirian saya;Saya suka berkirim surat pada teman-teman saya;Agg;Aff;
+181;Saya suka bermurah hati terhadap teman teman saya;Saya suka mengamat-amati bagaimana perasaan orang lain dalam satu keadaan tertentu;Nur;Int;
+182;Saya suka makan di restoran-restoran yang baru atau asing;Saya suka untuk menempatkan diri saya ditempat orang lain, dan membayangkan bagaimana perasaan saya apabila saya dalam keadaan atau situasi yang sama;Chg;Int;
+183;Saya suka bekerja sampai jauh malam untuk menyelesaikan suatu pekerjaan;Saya ingin memahami bagaimana perasaan teman-teman saya dalam menghadapi berbagai masalah;End;Int;
+184;Saya suka nafsu saya terangsang;Saya suka mempelajari dan menganalisa tingkah laku orang-orang lain;Het;Int;
+185;Saya rasanya ingin memperolok-olok orang-orang yang melakukan hal-hal yang saya anggap bodoh;Saya suka meramalkan bagimana teman-teman saya akan bertindak dalam berbagai situasi;Agg;Int;
+186;Saya suka memaafkan teman-teman saya yang menyakiti hati saya;Saya ingin teman-teman saya memberi dorongan-dorongan kepada saya bila saya menghadapi kegagalan;Nur;Suc;
+187;Saya suka bereksperimen dalam mencoba hal-hal yang baru;Saya ingin agar teman-teman saya menunjukkan simpati dan pengertian bila saya mengalami kesukaran-kesukaran;Chg;Suc;
+188;Saya suka mengerjakan teka-teki atau memecahkan persoalan-persoalan sampai selesai;Saya ingin diperlakukan dengan ramah oleh teman-teman saya;End;Suc;
+189;Saya ingin dianggap punya daya tarik fisik oleh orang-orang dari lawan jenis saya;Saya ingin teman-teman saya banyak menujukkan rasa sayang mereka terhadap saya;Het;Suc;
+190;Saya rasanya ingin mengecam seseorang di muka umum bila orang itu patut menerimanya;Saya ingin agar teman-teman saya meributkan tentang diri saya, apabila mendapatkan cedera atau sakit;Agg;Suc;
+191;Saya suka berlaku ramah tehadap teman-teman saya;Saya ingin dianggap sebagai pemimpin oleh orang-orang lain;Nur;Dom;
+192;Saya lebih suka mencoba pekerjaan-pekerjaan yang baru dan lain daripada terus menerus melakukan pekerjaan yang sama;Apabila saya bekerja dalam suatu panitia, saya ingin ditunjuk atau dipilih sebagai ketuanya;Chg;Dom;
+193;Saya suka menyelesaikan setiap pekerjaan atau tugas yang telah saya mulai;Saya ingin dapat membujuk dan mempengaruhi orang lain untuk melakukan apa yang saya kehendaki;End;Dom;
+194;Saya suka ikut serta dalam diskusi-diskusi tentang seks dan aktifitas seksuil;Saya senang untuk diminta menyelesaikan pertentangan-pertentangan atau perselisihan-perselisihan;Het;Dom;
+195;Saya menjadi sedemikian marahnya, sehingga rasanya ingin melemparkan dan merusak barang-barang;Saya suka menyatakan kepada orang lain bagaimana mereka harus melakukan pekerjaan mereka;Agg;Dom;
+196;Saya suka berlaku sangat ramah terhadap teman teman saya;Bila keadaan kurang menguntungkan bagi saya, maka saya merasa bahwa saya harus lebih disalahkan daripada orang lain;Nur;Aba;
+197;Saya suka berkeliling di pedalaman dan tinggal di berbagai tempat;Apabila saya melakukan sesuatu hal yang salah, saya merasa bahwa untuk itu saya harus dihukum;Chg;Aba;
+198;Saya suka bertahan menghadapi suatu pekerjaan atau masalah, sekalipun tampaknya seolah-olah saya tak akan berhasil;Saya merasa bahwa pilu hati dan kesusahan yang telah saya alami, lebih banyak membawa kebaikan daripada kerugian bagi saya;End;Aba;
+199;Saya suka membaca buku-buku dan sandiwara, terutama yang berkisar sekitar masalah seks;Saya merasa bahwa saya harus mengakui hal-hal yang telah saya lakukan dan saya anggap salah;Het;Aba;
+200;Saya rasanya ingin menyalahkan orang lain bila keadaannya kurang menguntungkan saya;Saya merasa bahwa dalam banyak hal, saya kalah bila dibandingkan dengan orang-orang lain;Agg;Aba;
+201;Saya suka melakukan pekerjaan apa saja terbaik mungkin;Saya suka menolong orang-orang lain, yang tidak begitu beruntung apabila dibandingkan dengan keadaan saya;Nur;Nur;Nur
+202;Saya suka mengerjakan hal-hal yang baru dan berbeda-beda;Saya suka memperlakukan orang lain dengan ramah dan simpatik;Chg;Nur;
+203;Bila saya harus melakukan suatu tugas, saya ingin mengerjakannya sampai selesai;Saya suka menolong orang-orang lain, yang tidak begitu beruntung apabila dibandingkan dengan keadaan saya;End;Nur;
+204;Saya suka ikut dalam aktivitas-aktivitas sosial bersama-sama dengan orang-orang dari lawan jenis saya;Saya suka memaafkan teman-teman saya yang menyakiti hati saya;Het;Nur;
+205;Saya suka menyerang pendirian-pendirian yang bertentangan dengan pendirian saya;Saya ingin teman-teman saya mempercayai saya dan menceritakan kesulitan-kesulitan mereka kepada saya;Agg;Nur;
+206;Saya suka memperlakukan orang lain dengan ramah dan simpatik;Saya suka bepergian melihat-lihat daerah pedalaman;Nur;Chg;
+207;Saya suka mengikuti adat-istiadat dan menghindarkan melakukan hal-hal yang mungkin dianggap tidak wajar oleh orang-orang yang saya hormati;Saya suka mengikuti mode baru;Chg;Chg;Chg
+208;Saya suka bekerja keras pada tiap pekerjaan yang saya hadapi;Saya ingin mengalami pembaharuan dan perubahan dalam kehidupan saya sehari-hari;End;Chg;
+209;Saya mempunyai keinginan untuk mencium orang yang menarik dari lawan jenis saya;Saya suka bereksperimen dalam mencoba hal-hal yang baru;Het;Chg;
+210;Saya rasanya ingin menghardik orang lain bila saya berbeda pendapat dengan mereka;Saya suka mengikuti mode-mode baru;Agg;Chg;
+211;Saya suka menolong orang-orang lain, yang tidak begitu beruntung apabila dibandingkan dengan keadaan saya;Saya suka menyelesaikan setiap pekerjaan atau tugas yang telah saya mulai;Nur;End;
+212;Saya suka berkeliling di pedalaman dan tinggal di berbagai tempat;Saya ingin bekerja berjam-jam tanpa diganggu;Chg;End;
+213;Jika saya akan bepergian, saya senang apabila segala sesuatunya telah direncanakan sebelumnya;Saya suka mengerjakan teka-teki dan memcahkan persoalan-persoalan sampai selesai;End;End;End
+214;Saya mudah jatuh cinta pada seseorang dari lawan jenis saya;Saya ingin menyelesaikan pekerjaan satu persatu sebelum memulai yang lain;Het;End;
+215;Saya suka mengatakan kepada orang-orang lain bagimana pendapat saya mengenai mereka;Saya ingin menghindarkan diganggu bila saya sedang bekerja;Agg;End;
+216;Saya suka memberi pertolongan-pertolongan kecil kepada teman-teman saya;Saya suka ikut dalam aktivitas-aktivitas sosial bersama-sama dengan orang-orang dari lawan jenis saya;Nur;Het;
+217;Saya suka bertemu dengan orang-orang baru;Saya mempunyai keinginan untuk mencium orang yang menarik dari lawan jenis saya;Chg;Het;
+218;Saya ingin mengerjakan teka-teki atau memecahkan persoalan-persoalan sampai selesai;Saya mudah jatuh cinta pada seseorang dari lawan jenis saya;End;Het;
+219;Saya suka berbicara tentang hal-hal yang telah saya capai;Saya suka mendengarkan atau menceritakan lelucon-lelucon yang terutama berkisar soal seks;Het;Het;Het
+220;Saya rasanya ingin memperolok orang-orang yang melakukan hal-hal yang saya anggap bodoh;Saya suka mendengarkan atau menceritakan lelucon-lelucon yang terutama berkisar soal seks;Agg;Het;
+221;Saya ingin teman-teman saya mempercayai saya dan menceritakan kesulitan-kesulitan mereka kepada saya;Sayas suka membaca berita-berita surat kabar tentang pembunuhan-pembunuhan dan lain-lain perbuatan kekerasan;Nur;Agg;
+222;Saya suka mengikuti mode baru;Saya rasanya ingin mengecam seseorang di muka umum bila orang itu patut menerimanya;Chg;Agg;
+223;Saya ingin menghindarkan diganggu bila saya sedang bekerja;Saya rasanya ingin menghardik orang lain bila saya berbeda pendapat dengan mereka;End;Agg;
+224;Saya suka mendengarkan atau menceritakan lelucon-lelucon yang terutama berkisar soal seks;Rasa rasanya ingin membalas dendam bila seseorang menghina saya;Het;Agg;
+225;Saya suka mengelakkan tanggung jawab dan kewajiban-kewajiban;Saya rasanya ingin memperolok-olok orang-orang yang melakukan hal-hal yang saya anggap bodoh;Agg;Agg;Agg

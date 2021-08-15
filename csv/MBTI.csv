@@ -1,0 +1,121 @@
+id;text;tendency;modifier
+1;Saya suka berkelompok;E;+
+2;Saya suka menyendiri;E;-
+3;Saya tergolong orang yang santai;E;+
+4;Saya orang yang serius;E;-
+5;Saya antusias;E;+
+6;Saya suka menjauhkan diri dari orang lain;E;-
+7;Saya suka mengemukakan pendapat dalam kelompok;E;+
+8;Saya banyak menyerap informasi dari kelompok;E;-
+9;Saya merasa energik dalam pesta-pesta;E;+
+10;Saya merasa energi saya berkurang dalam pesta-pesta;E;-
+11;Saya mempunyai banyak teman;E;+
+12;Saya hanya berteman dengan beberapa orang tertentu;E;-
+13;Saya mampu menyatakan pikiran saya ;E;+
+14;Saya banyak menyimpan pemikiran saya ;E;-
+15;Saya suka mencari kegiatan;E;+
+16;Saya suka mencari waktu yang tenang;E;-
+17;Saya senang berbicara;E;+
+18;Saya lebih suka mendengarkan;E;-
+19;Saya suka membagikan pengalaman pribadi saya ;E;+
+20;Saya sulit didekati;E;-
+21;Saya menyukai pengalaman baru  ;E;+
+22;Saya menyukai rutinitas;E;-
+23;Saya ingin selalu bersama orang lain;E;+
+24;Saya lebih menyukai obyektivitas;E;-
+25;Saya mudah terpengaruh penedapat orang lain;E;+
+26;Saya lebih banyak bertanya pada diri sendiri;E;-
+27;Saya mudah mengekspresikan emosi;E;+
+28;Saya berlatih untuk mengontrol diri;E;-
+29;Saya memberi tanggapan terhadap sesuatu dengan cepat ;E;+
+30;Saya berhati-hati dalam menanggapi sesuatu;E;-
+31;Saya realistis;S;+
+32;Saya inspirational;S;-
+33;Saya menyukai rutinitas ;S;+
+34;Saya suka kegiatan yang variatif ;S;-
+35;Saya berflkir menggunakan fakta ;S;+
+36;Saya berlikir tentang kemungkinan-kemungkinan  ;S;-
+37;Saya suka dengan ketepatan;S;+
+38;Saya suka menampung sumbang saran ;S;-
+39;Saya sangat memperhatikan fakta saat ini ;S;+
+40;Saya lebih berorientasi pada masa mendatang  ;S;-
+41;Saya lebih mengandalkan panca indera;S;+
+42;Saya mengandalkan indera keenam saya ;S;-
+43;Saya lebih mendasarkan diri pada kenyataan ;S;+
+44;Saya suka membayangkan apa yang akan terjadi  ;S;-
+45;Saya berfikir secara harfiah;S;+
+46;Saya melihat sesuatu dengan interpretasi ;S;-
+47;Saya suka membuat pemyataan langsung  ;S;+
+48;Saya suka membuat pemyataan kiasan;S;-
+49;Saya lebih suka memperhatikan hal-hal pokok ;S;+
+50;Saya lebih memperhatikan pada hal-hal lain yang berkaitan ;S;-
+51;Saya biasa menggunakan ketrampilan yang sudah terlatih  ;S;+
+52;Saya belajar dengan ketrampilan baru;S;-
+53;Perhatian saya adalah pada realita  ;S;+
+54;Perhatian saya pada inspirasi;S;-
+55;Saya tidak suka berubah-ubah;S;+
+56;Saya suka berubah-ubah tergantung situasi;S;-
+57;Saya bekerja untuk memecahkan masalah yang ada;S;+
+58;Saya bekerja untuk menemukan masalah baru;S;-
+59;Saya menyukai rincian-rincian kecil;S;+
+60;Saya menyukai gambaran besamya;S;-
+61;Cara berfikir saya logis dan analitis ;T;+
+62;Saya mempunyai orientasi pada nilai pribadi saya;T;-
+63;Saya kritis ;T;+
+64;Saya menarik ;T;-
+65;Saya cenderung taat pada peraturan ;T;+
+66;Saya suka mencari celah peraturan yang bisa menguntungkan ;T;-
+67;Saya lebih memperhatikan faktor teknis daripada faktor manusianya dalam pengambilan kebijakan ;T;+
+68;Saya cenderung mempunyai keterlibatan pribadi yang kuat dalam memecahkan masalah ;T;-
+69;Saya suka mengemukakan isi pikiran apa adanya;T;+
+70;Saya mengemukakan secara taktis dan menyembunyikan apa yang kurang menguntungkan;T;-
+71;Saya memperhatikan rasa keadilan;T;+
+72;Saya memperlihatkan kemurahan hati;T;-
+73;Saya keras kepala;T;+
+74;Saya lembut;T;-
+75;Saya berorientasi pada keadilan;T;+
+76;Saya simpatik;T;-
+77;Saya lebih berorientasi pada ide;T;+
+78;Saya memusatkan diri pada hal-hal ideal;T;-
+79;Saya tegas;T;+
+80;Saya lemah-lembut;T;-
+81;Saya tidak mudah terpengaruh oleh suasana;T;+
+82;Saya mudah terbawa suasana;T;-
+83;Saya berkonsentrasi pada tugas;T;+
+84;Saya lebih berkonsentrasi untuk menjaga hubungan dengan rekan kerja;T;-
+85;Saya lebih menyukai kebenaran dan kejujuran;T;+
+86;Saya menghindari hal-hal yang tidak menyenangkan;T;-
+87;Saya bingung dengan hal-hal yang tidak logis;T;+
+88;Saya dapat memahami hal-hal di luar logika;T;-
+89;Saya lebih mudah menyelaraskan dengan hal teknis;T;+
+90;Saya akan menyelaraskan diri dengan orang-orang yang ada di sekitar saya;T;-
+91;Saya tenang dan berhati-hati ;J;+
+92;Saya spontan ;J;-
+93;Saya lebih suka sesuatu yang terstruktur  ;J;+
+94;Saya lebih suka sesuatu yang tidak terstruktur ;J;-
+95;Saya tegas dalam mengambil keputusan ;J;+
+96;Saya berhati-hati dalam mengambil keputusan ;J;-
+97;Saya mengikuti aturan-aturan yang pasti ;J;+
+98;Saya berpikiran terbuka;J;-
+99;Saya tekun dan berpendirian;J;+
+100;Saya suka menunda-nunda ;J;-
+101;Saya suka kerapian dan sistematika;J;+
+102;Saya fleksibel ;J;-
+103;Saya mengatur diri sendiri ;J;+
+104;Saya terbuka dan mudah menerima masukan ;J;-
+105;Saya tepat waktu ;J;+
+106;Saya santai tidak tergesa-gesa  ;J;-
+107;Saya orang yang sistematis;J;+
+108;Saya menuruti kata hati ;J;-
+109;Saya selalu benar ;J;+
+110;Saya menerima kalah atau salah ;J;-
+111;Saya kritis;J;+
+112;Saya mudah menyetujui;J;-
+113;Saya berbuat sesuatu sesuai norma dan standard;J;+
+114;Saya suka mancari pengalaman baru;J;-
+115;Saya menyukai persahabatan yang langgeng ;J;+
+116;Saya mudah berkenalan dengan orang lnin;J;-
+117;Tindakan saya cenderung terencana;J;+
+118;Saya menyukai kegiatan yang spontan;J;-
+119;Saya menjalankan segala perintah agama;J;+
+120;Saya menjalankan perintah agama yang utama saja ;J;-

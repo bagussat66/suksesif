@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+
+{% load humanize %}
+
+{% block content %}
+  <!--Main layout-->
+  <main class="mt-5 pt-4">
+    <div class="container dark-grey-text mt-5">
+
+      <!--Grid row-->
+      <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+          {% if object.image %}
+            <img src="{{object.image.url}}" class="img-fluid" alt="">
+          {% else %}
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/14.jpg" class="img-fluid" alt="">
+          {% endif %}
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+          <!--Content-->
+          <div class="p-4">
+            <h2 class="my-5 h2 text-center">{{object.title}}</h2>
+            <div class="mb-3">
+              <a href="">
+                <span class="badge purple mr-1">{{object.get_category_display}}</span>
+              </a>
+
+            </div>
+
+            <p class="lead">
+              {% if object.discounted %}
+              <span class="mr-1">
+                <del>Rp.{{object.price|intcomma}}</del>
+              </span>
+              {% if object.is_free %}
+                <strong>GRATIS!</strong>
+                {% else %}
+                <strong>Rp.{{object.discount_price|intcomma}}</strong>
+                {% endif %}
+              {% else %}
+              <span>Rp.{{object.price|intcomma}}</span>
+              {% endif %}
+            </p>
+
+            <p class="lead font-weight-bold">Description</p>
+
+            <p>{{object.description}}</p>
+
+            <p>
+
+            <a href="{{object.get_add_to_cart_url}}" class="btn btn-primary" role="button" >Add to cart <i class="fas fa-shopping-cart ml-1"></i></a>
+
+            <a href="{{object.get_remove_from_cart_url}}" class="btn btn-danger" role="button" >Remove from cart</i></a>
+            </p>
+
+
+          </div>
+          <!--Content-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+      <hr>
+
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-6 text-center">
+          {% if object.additional_information %}
+          <h4 class="my-4 h4">Additional information</h4>
+
+          <p>{{object.additional_information}}</p>
+          {% endif %}
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+      <!--Grid row-->
+      <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/11.jpg" class="img-fluid" alt="">
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/12.jpg" class="img-fluid" alt="">
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg" class="img-fluid" alt="">
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+{% endblock %}

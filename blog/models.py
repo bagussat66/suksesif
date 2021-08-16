@@ -25,6 +25,13 @@ class Like(models.Model):
     def __str__(self):
         return self.user.name
 
+class Visit(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE, null=True)
+    timestamp = models.DateTimeField(auto_now_add=True,blank=True)
+
+    def __str__(self):
+        return self.user.name
+
 class Tag(models.Model):
     name = models.CharField(max_length=30)
     slug = models.CharField(max_length=20)
@@ -33,7 +40,7 @@ class Tag(models.Model):
         return self.name
 
 
-class Blog(models.Model):
+class Post(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE, null=True)
     title = models.CharField(max_length=120)
     subtitle = models.CharField(max_length=120)

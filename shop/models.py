@@ -1,8 +1,11 @@
 from test_core.models import TYPE_CHOICES
+from user_profile.models import Address
 from django.db import models
 from django.db.models.deletion import SET_NULL
 from django.urls import reverse
 from django.conf import settings
+
+
 
 # Create your models here.
 CATEGORY_CHOICES = (
@@ -71,13 +74,6 @@ class CartProduct(models.Model):
     def __str__(self):
         return f"{self.quantity} of {self.product.title}"
 
-class Address(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
-    address = models.CharField(max_length=100)
-    zip_code = models.CharField(max_length=100)
-
-    def __str__(self):
-        return self.user.username
 
 class Transaction(models.Model):
     # user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE, null=True)
@@ -93,7 +89,7 @@ class Coupon(models.Model):
     discount = models.FloatField(max_length=3)
     min_order = models.FloatField(max_length=100)
     description = models.TextField(blank=True,null=True)
-    counter = models.IntegerField(max_length=10,default=0)
+    counter = models.IntegerField(default=0)
 
     def __str__(self):
         return self.code

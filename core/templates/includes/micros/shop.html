@@ -1,4 +1,5 @@
 {% load static %}
+{% load humanize %}
 
 <!-- Shop Area
 ===================================== -->
@@ -18,14 +19,18 @@
         <div class="row text-center">
             <div class="col-md-12">                    
                 <div id="owlShop">
-                    
+                    {% for object in object_list%}
                     <!-- shop item start -->
                     <div class="shop-item-container-out">
                         <div class="shop-item-container-in">
                             <div class="shop-label">-50%</div>
-                            <img src="assets/img/shop/img-shop-1.png" alt="shop item" class="img-responsive center-block">
-                            <h4 class="shop-item-title">Cool Man Jacket</h4>
-                            <span class="shop-item-price">$90.00</span>
+                            {% if object.image %}
+                                <img src="{{object.image.url}}" alt="shop item" class="img-responsive center-block">
+                            {% else %}
+                                <img src="http://openmindspsychology.co.uk/wp-content/uploads/2020/07/psychology-of-the-mind.png" alt="shop item" class="img-responsive center-block">
+                            {% endif %}
+                            <h4 class="shop-item-title">{{object.title}}</h4>
+                            <span class="shop-item-price">{{object.price|intcomma}}</span>
                         </div>
                         <div class="row">
                             <div class="col-sm-3 col-xs-3">
@@ -35,7 +40,7 @@
                             </div>
                             <div class="col-sm-6 col-xs-6">
                                 <a href="#" class="add-to-cart">
-                                    Add to cart
+                                    Menuju Tes
                                 </a>
                             </div>
                             <div class="col-sm-3 col-xs-3">
@@ -46,207 +51,8 @@
                         </div>
                     </div>
                     <!-- shop item end -->
+                    {% endfor %}
                     
-                    <!-- shop item start -->
-                    <div class="shop-item-container-out">
-                        <div class="shop-item-container-in">
-                            <img src="assets/img/shop/img-shop-2.png" alt="shop item" class="img-responsive center-block">
-                            <h4 class="shop-item-title">Casual Jacket</h4>
-                            <span class="shop-item-price">$79.00</span>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#" class="add-to-wishlist" data-toggle="tooltip" title="Add to wishlist">
-                                    <i class="fa fa-heart"></i>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-xs-6">
-                                <a href="#" class="add-to-cart">
-                                    Add to cart
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#" class="send-to-friend" data-toggle="tooltip" title="Send to friend">
-                                    <i class="fa fa-envelope"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- shop item end -->
-                    
-                    <!-- shop item start -->
-                    <div class="shop-item-container-out">
-                        <div class="shop-item-container-in">
-                            <div class="shop-label">Sale</div>
-                            <img src="assets/img/shop/img-shop-3.png" alt="shop item" class="img-responsive center-block">
-                            <h4 class="shop-item-title">Summer Jacket</h4>
-                            <span class="shop-item-price">$85.00</span>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#" class="add-to-wishlist" data-toggle="tooltip" title="Add to wishlist">
-                                    <i class="fa fa-heart"></i>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-xs-6">
-                                <a href="#" class="add-to-cart">
-                                    Add to cart
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#" class="send-to-friend" data-toggle="tooltip" title="Send to friend">
-                                    <i class="fa fa-envelope"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- shop item end -->
-                    
-                    <!-- shop item start -->
-                    <div class="shop-item-container-out">
-                        <div class="shop-item-container-in">
-                            <img src="assets/img/shop/img-shop-4.png" alt="shop item" class="img-responsive center-block">
-                            <h4 class="shop-item-title">Man Jacket</h4>
-                            <span class="shop-item-price">$57.00</span>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#" class="add-to-wishlist" data-toggle="tooltip" title="Add to wishlist">
-                                    <i class="fa fa-heart"></i>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-xs-6">
-                                <a href="#" class="add-to-cart">
-                                    Add to cart
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#" class="send-to-friend" data-toggle="tooltip" title="Send to friend">
-                                    <i class="fa fa-envelope"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- shop item end -->
-                    
-                    <!-- shop item start -->
-                    <div class="shop-item-container-out">
-                        <div class="shop-item-container-in">
-                            <div class="shop-label">-50%</div>
-                            <img src="assets/img/shop/img-shop-1.png" alt="shop item" class="img-responsive center-block">
-                            <h4 class="shop-item-title">Cool Man Jacket</h4>
-                            <span class="shop-item-price">$90.00</span>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#" class="add-to-wishlist" data-toggle="tooltip" title="Add to wishlist">
-                                    <i class="fa fa-heart"></i>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-xs-6">
-                                <a href="#" class="add-to-cart">
-                                    Add to cart
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#" class="send-to-friend" data-toggle="tooltip" title="Send to friend">
-                                    <i class="fa fa-envelope"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- shop item end -->
-                    
-                    <!-- shop item start -->
-                    <div class="shop-item-container-out">
-                        <div class="shop-item-container-in">
-                            <div class="shop-label">-50%</div>
-                            <img src="assets/img/shop/img-shop-2.png" alt="shop item" class="img-responsive center-block">
-                            <h4 class="shop-item-title">Cool Man Jacket</h4>
-                            <span class="shop-item-price">$90.00</span>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#" class="add-to-wishlist" data-toggle="tooltip" title="Add to wishlist">
-                                    <i class="fa fa-heart"></i>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-xs-6">
-                                <a href="#" class="add-to-cart">
-                                    Add to cart
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#" class="send-to-friend" data-toggle="tooltip" title="Send to friend">
-                                    <i class="fa fa-envelope"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- shop item end -->
-                    
-                    <!-- shop item start -->
-                    <div class="shop-item-container-out">
-                        <div class="shop-item-container-in">
-                            <div class="shop-label">-50%</div>
-                            <img src="assets/img/shop/img-shop-3.png" alt="shop item" class="img-responsive center-block">
-                            <h4 class="shop-item-title">Cool Man Jacket</h4>
-                            <span class="shop-item-price">$90.00</span>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#" class="add-to-wishlist" data-toggle="tooltip" title="Add to wishlist">
-                                    <i class="fa fa-heart"></i>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-xs-6">
-                                <a href="#" class="add-to-cart">
-                                    Add to cart
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#" class="send-to-friend" data-toggle="tooltip" title="Send to friend">
-                                    <i class="fa fa-envelope"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- shop item end -->
-                    
-                    <!-- shop item start -->
-                    <div class="shop-item-container-out">
-                        <div class="shop-item-container-in">
-                            <div class="shop-label">-50%</div>
-                            <img src="assets/img/shop/img-shop-4.png" alt="shop item" class="img-responsive center-block">
-                            <h4 class="shop-item-title">Cool Man Jacket</h4>
-                            <span class="shop-item-price">$90.00</span>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#" class="add-to-wishlist" data-toggle="tooltip" title="Add to wishlist">
-                                    <i class="fa fa-heart"></i>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-xs-6">
-                                <a href="#" class="add-to-cart">
-                                    Add to cart
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#" class="send-to-friend" data-toggle="tooltip" title="Send to friend">
-                                    <i class="fa fa-envelope"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- shop item end -->
 
                 </div><!-- #owlShop end -->
             </div><!-- col-md end -->

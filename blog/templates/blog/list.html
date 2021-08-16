@@ -68,7 +68,7 @@
                             </div>
                             <div class="blog-one-body">
                                 <h4 class="blog-title"><a href="#">{{object.title}}</a></h4>
-                                <p class="">
+                                <p class="lead">
                                     {{object.subtitle}}
                                 </p>
                             </div>
@@ -84,26 +84,27 @@
                 
             </div>
             
-            <div class="row">
-                <div class="col-md-12 text-center">
+       
+            </div>
+            <div class="row mt35 animated" data-animation="fadeInUp" data-animation-delay="800">
+                
                 {% if is_paginated %}
-                    {% if page_obj.has_previous %}
-                        <a class="button-o button-md button-dark hover-ripple-out mt25" href="?page={{page_obj.previous_page_number}}&category={{category}}" aria-label="Previous"><</a>
-                    {% else %}
-                        <a class="button-o button-md button-dark hover-ripple-out mt25 disabled" href="#" aria-label="Previous"><</a>
-                    {% endif %}
-
-                    {% for i in page_obj.paginator.page_range %}
-                        <a class="button-o button-md button-dark hover-ripple-out mt25 {% ifequal i page_obj.number %}active{% endifequal %}" href="?page={{i}}&category={{category}}">{{i}}</a>
-                    {% endfor %}
-
-                    {% if page_obj.has_next %}
-                        <a class="button-o button-md button-dark hover-ripple-out mt25" href="?page={{page_obj.next_page_number}}&category={{category}}" aria-label="Next">></a>
-                    {% else %}  
-                        <a class="button-o button-md button-dark hover-ripple-out mt25 disabled" href="#" aria-label="Next">></a>
-                    {% endif %}
+                    <div class="col-md-6">
+                        {% if page_obj.has_previous %}
+                            <a class="button button-dark button-sm pull-right" href="?page={{page_obj.previous_page_number}}&category={{category}}" aria-label="Previous"><</a>
+                        {% else %}
+                            <p class="button button-white button-sm pull-right" href="#" aria-label="Previous"><</p>
+                        {% endif %}
+                    </div>
+                    <div class="col-md-6">
+                        {% if page_obj.has_next %}
+                            <a class="button button-dark button-sm pull-left" href="?page={{page_obj.next_page_number}}&category={{category}}" aria-label="Next">></a>
+                        {% else %}  
+                            <p class="button button-white button-sm pull-left" href="#" aria-label="Next">></p>
+                        {% endif %}
+                    </div>
                 {% endif %}
-                </div>
+                   
             </div>
         </div>
     </div>       

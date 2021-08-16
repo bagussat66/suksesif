@@ -17,7 +17,6 @@ import random
 
 class HomeView(ListView):
     template_name = 'home.html'
-    paginate_by = 4
 
     def get_queryset(self):
         category = self.request.GET.get('category')

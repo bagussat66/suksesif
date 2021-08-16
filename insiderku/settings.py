@@ -56,14 +56,13 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    
-    'django_address',
-    'django_countries',
+    'django_summernote',
     'crispy_forms',
 
     'core',
     'blog',
     'shop',
+    'user_profile',
 
     'test_manager',
     'test_core',
@@ -179,3 +178,5 @@ MEDIA_ROOT = BASE_DIR / 'media_root'
 LOGIN_REDIRECT_URL = '/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'

@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+
+{% load humanize %}
+{% load crispy_forms_tags %}
+{% load timer %}
+
+{% block content %}   
+                
+    <!-- Subheader Area
+    ===================================== -->
+    <header class="bg-grad-stellar mt70">
+        <div class="container">
+            <div class="row mt20 mb30">
+                <div class="col-md-6 text-left">
+                    <h3 class="color-light text-uppercase">Asesmen {{object.type}} <small class="color-light alpha7">{{object.title}}</small></h3>
+                </div>
+                <div class="col-md-6 text-right pt35">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li>Asessment</li>
+                        <li>{{object.type}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    <!-- Blog Area
+    ===================================== -->
+    <div id="blog" class="bg-gray pt50 pb75">
+        <div class="container">
+            <div class="row blog-masonry-3col">
+                <!-- Blog Item -->
+                <div class="col-md-12 col-sm-12 col-xs-12 blog-masonry-item mb25">
+                    <div class="blog-one"> 
+                        <div class="blog-one-attrib">                          
+                            <span class="blog-category">Waktu Tersisa: <span id="remaining">{{expected|remaining_timer}}</span></span>                                                          
+                        </div>
+                        <div class="blog-one-body">
+                            <h4 class="blog-title"><a href="#">Pastikan semua soal sudah dijawab dengan baik sebelum mengirim jawaban</a></h4>
+                        </div>
+                        <div class="blog-one-body">
+                            <p>Pastikan semua soal sudah dijawab dengan baik sebelum mengirim jawaban.</p>
+                            <p>
+                            {% include 'includes/nav_question.html' %}
+                            </p>
+                        </div>
+                        <div class="blog-one-footer">
+                            <a class="button button-warning" href="{% url 'test:assessment' type=object.type.lower %}">Kembali ke Awal</a>
+                            <a class="button button-danger" href="{% url 'test:tester' type=object.type.lower %}">Kirim dan Selesai</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row blog-masonry-3col">
+                <!-- Blog Item -->
+                <div class="col-md-12 col-sm-12 col-xs-12 blog-masonry-item mb25">
+                    <div class="blog-one"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Display the countdown timer in an element -->
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("{{expected.isoformat}}").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+        // Display the result in the element with id="demo"
+        document.getElementById("remaining").innerHTML = String(hours).padStart(2, '0')  + ":"
+        + String(minutes).padStart(2, '0') + ":" + String(seconds).padStart(2, '0');
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("remaining").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+    </script>
+
+{% endblock content %}   

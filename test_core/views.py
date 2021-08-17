@@ -73,6 +73,7 @@ class TestResultView(DetailView):
 
 class TestPageView(View):
     template_name = 'test/assessment.html'
+    template_name_alt = 'test/assessment_summary.html'
     paginate_by = 5
 
     def load(self,*args,**kwargs):
@@ -156,7 +157,10 @@ class TestPageView(View):
                 'expected' : expected
             }
         
-        return render(self.request,self.template_name,context)
+        if no == '0':
+            return render(self.request,self.template_name_alt,context)
+        else:
+            return render(self.request,self.template_name,context)
         
     def post(self,*args,**kwargs):
         type = self.kwargs['type'].upper()
@@ -209,5 +213,7 @@ class TestPageView(View):
                 'expected' : expected
             }
 
-        return render(self.request,self.template_name,context)
-
+        if no == '0':
+            return render(self.request,self.template_name_alt,context)
+        else:
+            return render(self.request,self.template_name,context)

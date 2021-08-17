@@ -58,29 +58,11 @@
                         <div class="blog-one-body">
                             <h4 class="blog-title"><a href="#">Direktori Soal</a></h4>
                             <p>
-                            {% for field in form %}
-                                <a class="button
-                                {% if field.value %}
-                                    {% if forloop.counter >= no|add:'0' and forloop.counter < max|add:'0'%}
-                                        button-warning
-                                    {% else %}
-                                        button-success
-                                    {% endif %}
-                                {% else %}
-                                    {% if forloop.counter >= no|add:'0' and forloop.counter < max|add:'0'%}
-                                        button-blue
-                                    {% else %}
-                                        button-gray
-                                    {% endif %}
-                                {% endif %}" 
-                                style="min-width:4.8em" href="{% url 'test:assessment' type=object.type.lower no=forloop.counter %}">
-                                    {{forloop.counter}}
-                                </a>
-                            {% endfor %}
+                            {% include 'includes/nav_question.html' %}
                             </p>
                         </div>
                         <div class="blog-one-footer">
-                            <a class="button button-danger" href="{% url 'test:tester' type=object.type.lower%}">Akhiri Tes</a>                                
+                            <a class="button button-danger" href="{% url 'test:assessment' type=object.type.lower no=0%}">Akhiri Tes</a>                                
                         </div>
                     </div>
                 </div>

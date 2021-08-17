@@ -3,7 +3,9 @@ from django.conf import settings
 from django.db.models.deletion import SET_NULL
 from django.urls import reverse
 from django.conf import settings
+from django.utils import timezone
 from django.utils.timezone import deactivate
+from datetime import date, timedelta
 import random
 # Create your models here.
 
@@ -30,7 +32,12 @@ TYPE_CHOICES = (
     ('MBTI','Myers-Briggs Type Indicator'),
     ('BFI','Big Five Inventory'),
     ('PAPI','PAPI Kostick'),
-    ('TPA','Tes Potensi Akademik')
+    ('EPPS','Edward Personal Preference Schedule'),
+    ('DISC','Dominant, Influencing, Steadiness, Conscientiousness'),
+    ('MSDT','Management Style Diagnostic Test'),
+    ('PF16','Personality Factor Sixteen'),
+    ('TPA','Tes Potensi Akademik'),
+    
 )
 
 class Tester(models.Model):
@@ -186,25 +193,35 @@ class TestAttempt(models.Model):
     tester = models.ForeignKey(Tester,on_delete=models.CASCADE,null=True)
     finished = models.BooleanField(default=False)
     type = models.CharField(choices=TYPE_CHOICES,blank=True,null=True,max_length=5)
+    timestamp = models.DateTimeField(auto_now_add=True,blank=True)
+    expected = models.DateTimeField(default=timezone.now)
     
     def __str__(self):
         return f"{self.tester.name}: {self.type}"
 
-    def re_init(self, *args, **kwargs):
+    def reload(self, *args, **kwargs):
+        
         if self.type=='MBTI':
             questions=list(QuestionMbti.objects.all())
+            minutes = 60
         elif self.type=='BFI':
             questions=list(QuestionBfi.objects.all())
+            minutes = 60
         elif self.type=='PAPI':
             questions=list(QuestionPapi.objects.all())
+            minutes = 60
         elif self.type=='EPPS':
             questions=list(QuestionEpps.objects.all())
+            minutes = 60
         elif self.type=='TPA':
             questions=list(QuestionTpa.objects.all())
+            minutes = 60
 
         if type!='TPA':  
             random.shuffle(questions)          
         
+        self.expected=timezone.now()+timedelta(minutes=minutes)
+
         for question in questions:
             if self.type=='MBTI':
                 ans = AnsweredQuestion(question_mbti=question, tester=self.tester)
@@ -219,6 +236,9 @@ class TestAttempt(models.Model):
             ans.save()
             self.answered_questions.add(ans)
         self.save()
+
+    def now(self):
+        return datetime.now()
 
     def get_score_mbti(self):
         E = 0

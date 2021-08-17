@@ -1,43 +1,124 @@
 {% extends 'base.html' %}
+
+
+{% load humanize %}
 {% load crispy_forms_tags %}
+{% load timer %}
 
-{% load index %}
-
-
-{% block content %}
-    <!--Main layout-->
-    <main class="mt-5 pt-4">
-        <div class="container wow fadeIn">
-
-        <!-- Heading -->
-        <h2 class="my-5 h2 text-center">Selamat Mengerjakan {{tester.name}}!</h2>
-
-        <!--Grid row-->
-        <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-12 mb-4">
-
-            <!--Card-->
-            <div class="card">
-                <!--Card content-->
-                <form class="card-body" method="POST">
-                    {% csrf_token %}
-
-                    {{form}}
-
-                         
-                    <button class="btn btn-primary" type="submit">Lanjut ke Penilaian</button>
-                </form>
+{% block content %}   
                 
+    <!-- Subheader Area
+    ===================================== -->
+    <header class="bg-grad-stellar mt70">
+        <div class="container">
+            <div class="row mt20 mb30">
+                <div class="col-md-6 text-left">
+                    <h3 class="color-light text-uppercase">Asesmen {{object.type}} <small class="color-light alpha7">{{object.title}}</small></h3>
+                </div>
+                <div class="col-md-6 text-right pt35">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li>Asessment</li>
+                        <li>{{object.type}}</li>
+                    </ul>
+                </div>
             </div>
-            <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-
         </div>
-    </main>
-    <!--Main layout-->
-{% endblock %}
+    </header>
+    
+    
+    <!-- Blog Area
+    ===================================== -->
+    <div id="blog" class="bg-gray pt50 pb75">
+        <div class="container">
+            <div class="row blog-masonry-3col">
+                <!-- Blog Item -->
+                <form method="POST">
+                    <div class="col-md-8 col-sm-12 col-xs-12 blog-masonry-item mb25">
+                        <div class="blog-one"> 
+                            <div class="blog-one-attrib">                          
+                                <span class="blog-category">Waktu Tersisa: <span id="remaining">{{expected|remaining_timer}}</span></span>                                                          
+                            </div>
+                            <div class="blog-one-body">
+                                <h4 class="blog-title"><a href="#">Soal ke {{no}} - {{max|add:"-1"}}</a></h4>
+                                {% csrf_token %}
+                                <p>{{form|crispy}}</p>
+                            </div>
+                            <div class="blog-one-footer">
+                                {% if no|add:"0" > 1 %}
+                                    <a class="button button-danger" href="{% url 'test:assessment' type=object.type.lower no=prev %}">Soal Sebelumnya</a>
+                                {% endif %}
+                                <button class="button button-primary" type="submit">Simpan dan Lanjut</button>                                
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="col-md-4 col-sm-12 col-xs-12 blog-masonry-item mb25">
+                    <div class="blog-one"> 
+                        <div class="blog-one-body">
+                            <h4 class="blog-title"><a href="#">Direktori Soal</a></h4>
+                            <p>
+                            {% for field in form %}
+                                <a class="button
+                                {% if field.value %}
+                                    {% if forloop.counter >= no|add:'0' and forloop.counter < max|add:'0'%}
+                                        button-warning
+                                    {% else %}
+                                        button-success
+                                    {% endif %}
+                                {% else %}
+                                    {% if forloop.counter >= no|add:'0' and forloop.counter < max|add:'0'%}
+                                        button-blue
+                                    {% else %}
+                                        button-gray
+                                    {% endif %}
+                                {% endif %}" 
+                                style="min-width:4.8em" href="{% url 'test:assessment' type=object.type.lower no=forloop.counter %}">
+                                    {{forloop.counter}}
+                                </a>
+                            {% endfor %}
+                            </p>
+                        </div>
+                        <div class="blog-one-footer">
+                            <a class="button button-danger" href="{% url 'test:tester' type=object.type.lower%}">Akhiri Tes</a>                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Display the countdown timer in an element -->
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("{{expected.isoformat}}").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+        // Display the result in the element with id="demo"
+        document.getElementById("remaining").innerHTML = String(hours).padStart(2, '0')  + ":"
+        + String(minutes).padStart(2, '0') + ":" + String(seconds).padStart(2, '0');
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("remaining").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+    </script>
+
+{% endblock content %}   

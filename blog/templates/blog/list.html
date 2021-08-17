@@ -92,15 +92,11 @@
                     <div class="col-md-6">
                         {% if page_obj.has_previous %}
                             <a class="button button-dark button-sm pull-right" href="?page={{page_obj.previous_page_number}}&category={{category}}" aria-label="Previous"><</a>
-                        {% else %}
-                            <p class="button button-white button-sm pull-right" href="#" aria-label="Previous"><</p>
                         {% endif %}
                     </div>
                     <div class="col-md-6">
                         {% if page_obj.has_next %}
                             <a class="button button-dark button-sm pull-left" href="?page={{page_obj.next_page_number}}&category={{category}}" aria-label="Next">></a>
-                        {% else %}  
-                            <p class="button button-white button-sm pull-left" href="#" aria-label="Next">></p>
                         {% endif %}
                     </div>
                 {% endif %}

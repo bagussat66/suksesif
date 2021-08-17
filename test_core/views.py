@@ -1,3 +1,5 @@
+from datetime import datetime, timedelta
+from shop.models import Product
 import random
 
 from django.http import request
@@ -11,6 +13,7 @@ from django.views.generic.edit import FormView, UpdateView
 from .models import AnsweredQuestion, QuestionBfi, QuestionEpps, QuestionMbti, QuestionPapi, QuestionTpa, TestAttempt, TestResult, Tester
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.generic.base import View
+from django.utils import timezone
 
 from django.core.paginator import Paginator
 
@@ -70,20 +73,32 @@ class TestResultView(DetailView):
 
 class TestPageView(View):
     template_name = 'test/assessment.html'
-    paginate_by = 10
+    paginate_by = 5
 
     def load(self,*args,**kwargs):
         type = self.kwargs['type'].upper()
         tester = load_tester(type,self.request.session)
-
         test_attempt,create = TestAttempt.objects.get_or_create(tester=tester,type=type,finished=False)
+
+        while create == False:
+            print("Expected:")
+            print(test_attempt.expected)
+            print("Now:")
+            print(timezone.now())
+            if (test_attempt.expected.replace(tzinfo=None)<timezone.now().replace(tzinfo=None)):
+                test_attempt.finished = True
+                print("Set to Finished")
+                test_attempt.save()
+                test_attempt,create = TestAttempt.objects.get_or_create(tester=tester,type=type,finished=False)
+            else:
+                break
         initial = {}
 
         if create:
             print("New Test")
             if (self.request.user.is_authenticated):
                 test_attempt.user = self.request.user
-            test_attempt.re_init()
+            test_attempt.reload()
         else:
             print("Reload")
             i = 1
@@ -92,7 +107,7 @@ class TestPageView(View):
                 initial[key]=answered_question.answer
                 i+=1
 
-        return tester,test_attempt,initial
+        return test_attempt,initial
 
     def collect_answers(self,cleaned_data,*args,**kwargs):
         answers = []
@@ -107,8 +122,8 @@ class TestPageView(View):
 
 
     def get(self,*args,**kwargs):
-
         type = self.kwargs['type'].upper()
+        no = self.kwargs['no'] if self.kwargs['no'] else '1'
 
         if type=='MBTI':
             form_class = AnswerMbtiForm
@@ -124,20 +139,28 @@ class TestPageView(View):
             messages.info(self.request,"Test tidak ditemukan.")
             return redirect("core:home")
 
-        tester,test_attempt,initial = self.load()
+        test_attempt,initial = self.load()
 
-        page_number = self.request.GET.get('page')
+        max=int(no)+self.paginate_by
 
-        form = form_class(initial=initial,answered_questions=test_attempt.answered_questions.all())
+        form = form_class(initial=initial,answered_questions=test_attempt.answered_questions.all(),no=no,max=max)
+        object = get_object_or_404(Product,type=type)
+        expected = test_attempt.expected
+        prev = int(no) - self.paginate_by if int(no) - self.paginate_by > 1 else 1
         context = {
+                'no' : no,
+                'max' : max,
+                'prev' : prev,
                 'form' : form,
-                'tester' : tester,
+                'object' : object,
+                'expected' : expected
             }
         
         return render(self.request,self.template_name,context)
         
     def post(self,*args,**kwargs):
         type = self.kwargs['type'].upper()
+        no = self.kwargs['no'] if self.kwargs['no'] else '1'
 
         if type=='MBTI':
             form_class = AnswerMbtiForm
@@ -153,9 +176,9 @@ class TestPageView(View):
             messages.info(self.request,"Test tidak ditemukan.")
             return redirect("core:home")
         
-        tester,test_attempt,initial = self.load()
-
-        form = form_class(self.request.POST,answered_questions=test_attempt.answered_questions.all())
+        test_attempt,initial = self.load()
+        max=int(no)+self.paginate_by
+        form = form_class(self.request.POST,answered_questions=test_attempt.answered_questions.all(),no=no,max=max)
         
         if form.is_valid():
             answers = self.collect_answers(form.cleaned_data)
@@ -167,12 +190,23 @@ class TestPageView(View):
                     answered_question.answer = answers[i]
                     answered_question.save()
                 i += 1
-
-            return redirect("test:tester",type=self.kwargs['type'])
+            no = int(no)
+            if no>=len(answered_questions):
+                return redirect("test:tester",type=self.kwargs['type'])
+            else:
+                return redirect("test:assessment",type=self.kwargs['type'],no=max)
         
+        object = get_object_or_404(Product,type=type)
+        expected = test_attempt.expected
+
+        prev = int(no) - self.paginate_by if int(no) - self.paginate_by > 1 else 1
         context = {
+                'no' : no,
+                'max' : max,
+                'prev' : prev,
                 'form' : form,
-                'object' : tester
+                'object' : object,
+                'expected' : expected
             }
 
         return render(self.request,self.template_name,context)

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Landing Page | New Pasific</title>        
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta charset="utf-8">
+        <meta name="author" content="Harry Boo">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="assets/img/favicon.png">
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+        
+        <!-- Load Core CSS 
+        =====================================-->
+        <link rel="stylesheet" href="assets/css/core/bootstrap-3.3.7.min.css">
+        <link rel="stylesheet" href="assets/css/core/animate.min.css">
+        
+        <!-- Load Main CSS 
+        =====================================-->
+        <link rel="stylesheet" href="assets/css/main/main.css">
+        <link rel="stylesheet" href="assets/css/main/setting.css">
+        <link rel="stylesheet" href="assets/css/main/hover.css">
+        
+        <!-- Load Magnific Popup CSS 
+        =====================================-->
+        <link rel="stylesheet" href="assets/css/magnific/magic.min.css">        
+        <link rel="stylesheet" href="assets/css/magnific/magnific-popup.css">              
+        <link rel="stylesheet" href="assets/css/magnific/magnific-popup-zoom-gallery.css">
+        
+        <!-- Load OWL Carousel CSS 
+        =====================================-->
+        <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="assets/css/owl-carousel/owl.transitions.css">
+        
+        <!-- Load Color CSS - Please uncomment to apply the color.
+        =====================================      
+        <link rel="stylesheet" href="assets/css/color/blue.css">
+        <link rel="stylesheet" href="assets/css/color/brown.css">
+        <link rel="stylesheet" href="assets/css/color/cyan.css">
+        <link rel="stylesheet" href="assets/css/color/dark.css">
+        <link rel="stylesheet" href="assets/css/color/green.css">
+        <link rel="stylesheet" href="assets/css/color/orange.css">
+        <link rel="stylesheet" href="assets/css/color/purple.css">
+        <link rel="stylesheet" href="assets/css/color/pink.css">
+        <link rel="stylesheet" href="assets/css/color/red.css">
+        <link rel="stylesheet" href="assets/css/color/yellow.css">-->
+        <link rel="stylesheet" href="assets/css/color/pasific.css">
+        
+        <!-- Load Fontbase Icons - Please Uncomment to use linea icons
+        =====================================       
+        <link rel="stylesheet" href="assets/css/icon/linea-arrows-10.css">
+        <link rel="stylesheet" href="assets/css/icon/linea-basic-10.css">
+        <link rel="stylesheet" href="assets/css/icon/linea-basic-elaboration-10.css">
+        <link rel="stylesheet" href="assets/css/icon/linea-ecommerce-10.css">
+        <link rel="stylesheet" href="assets/css/icon/linea-music-10.css">
+        <link rel="stylesheet" href="assets/css/icon/linea-software-10.css">
+        <link rel="stylesheet" href="assets/css/icon/linea-weather-10.css">--> 
+        <link rel="stylesheet" href="assets/css/icon/font-awesome.css">
+        <link rel="stylesheet" href="assets/css/icon/et-line-font.css">
+        
+        <!-- Load JS
+        HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+        WARNING: Respond.js doesn't work if you view the page via file://
+        =====================================-->
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+    </head>
+    <body  id="page-top" data-spy="scroll" data-target=".navbar" data-offset="100">
+        
+        <!-- Page Loader
+        ===================================== -->
+		<div id="pageloader" class="bg-grad-animation-1">
+			<div class="loader-item">
+                <img src="assets/img/other/oval.svg" alt="page loader">
+            </div>
+		</div>
+        
+        <a href="#page-top" class="go-to-top">
+            <i class="fa fa-long-arrow-up"></i>
+        </a>
+        
+        <!-- Navigation Area
+        ===================================== -->
+        <nav class="navbar navbar-pasific navbar-op navbar-standart no-border">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand navbar-brand-img page-scroll" href="#page-top">
+                        <img src="assets/img/logo/logo-default-img.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden"><a href="#page-top"></a></li>
+                        <li><a href="#"><i class="fa fa-phone"></i> +1 234 567 890</a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i> <span class="text-lowercase">email@domain.com</span></a></li>
+                    </ul>
+                    <a href="#" id="buttonHire" class="button-o button-sm button-pasific mt10 mr10 ml10 pull-left">Contact us</a>      
+                    <a href="#" id="buttonPurchase" class="button button-sm button-pasific mt10 mr10 pull-left">Purchase Now</a>      
+                </div>
+            </div>
+        </nav>
+        
+        
+        <!-- Login Modal Dialog Box
+        ===================================== -->
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header bg-gray">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h5 class="modal-title text-center"><i class="fa fa-lock fa-fw"></i> Sign In</h5>
+                    </div>
+                    <div class="modal-body pt25">
+                        <div class="text-center">
+                            <span class="color-dark">Sign in with your social account</span><br>
+                            <a href="#">
+                                <img src="assets/img/other/fbconnect.png" alt="" class="mt10 mb10">
+                            </a>
+                            <a href="#">
+                                <img src="assets/img/other/twconnect.png" alt="" class="mt10 mb10"><br><br>
+                            </a>
+                            <span class="color-dark">- Or sign in with your email address -</span>
+                        </div>
+                        
+                        <form class="form-horizontal mt25 ml50">
+                          <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-8">
+                              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-8">
+                              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-8">
+                              <button type="submit" class="button button-pasific button-block">Sign in</button>
+                                
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer bg-gray">
+                        <span class="text-center">Don't have an account? <a href="#" class="color-dark">Register Now</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        
+        <!-- Search Modal Dialog Box
+        ===================================== -->
+        <div id="searchModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header bg-gray">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h5 class="modal-title text-center"><i class="fa fa-search fa-fw"></i> Search here</h5>
+                    </div>
+                    <div class="modal-body">                        
+                        <form action="#" class="inline-form">
+                            <input type="text" class="modal-search-input" autofocus>
+                        </form>
+                    </div>
+                    <div class="modal-footer bg-gray">
+                        <span class="text-center"><a href="#" class="color-dark">Advanced Search</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>        
+        
+        
+        <!-- Intro Area
+        ===================================== -->
+        <header class="intro mt-20" style="background: url(assets/img/bg/new-img-bg-6.jpg) 80% 0 no-repeat;">
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 text-left">
+                            <h1 class="fs-75 font-size-light color-black mt-100 mb25 animated" data-animation="fadeInUp" data-animation-delay="100">
+                                Creativity<br><span class="color-red">has</span> no limit
+                            </h1>
+                            <p class="intro-text color-dark animated" data-animation="fadeInUp" data-animation-delay="200">The simplest way to create live site <br>and make your dream live.</p>
+                            <a class="button button-circle button-grad-blood-mary button-lg hover-ripple-out animated" data-animation="fadeInUp" data-animation-delay="300">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+        
+        <!-- Welcome Area
+        ===================================== -->
+        <div id="features" class="pt50">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12 mt30">
+                        <div class="content-box content-box-icon-o content-box-left-icon">                        
+                            <span class="icon-lock color-pasific"></span>
+                            <h5>Privacy Protected</h5>               
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit commodi pariatur magni omnis reiciendis architecto.</p>
+                      
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12 mt30">
+                        <div class="content-box content-box-icon-o content-box-left-icon">                        
+                            <span class="icon-speedometer color-pasific"></span>
+                            <h5>Fast Respon</h5>               
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit commodi pariatur magni omnis reiciendis architecto.</p>
+                      
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12 mt30">
+                        <div class="content-box content-box-icon-o content-box-left-icon">                        
+                            <span class="icon-genius color-pasific"></span>
+                            <h5>Genius People</h5>               
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit commodi pariatur magni omnis reiciendis architecto.</p>
+                      
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12 mt30">
+                        <div class="content-box content-box-icon-o content-box-left-icon">                        
+                            <span class="icon-chat color-pasific"></span>
+                            <h5>Friendly Support</h5>               
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit commodi pariatur magni omnis reiciendis architecto.</p>
+                      
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12 mt30">
+                        <div class="content-box content-box-icon-o content-box-left-icon">                        
+                            <span class="icon-layers color-pasific"></span>
+                            <h5>Clean Code</h5>               
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit commodi pariatur magni omnis reiciendis architecto.</p>
+                      
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12 mt30">
+                        <div class="content-box content-box-icon-o content-box-left-icon">                        
+                            <span class="icon-adjustments color-pasific"></span>
+                            <h5>Easy to Customize</h5>               
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit commodi pariatur magni omnis reiciendis architecto.</p>
+                      
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Portfolio Area
+        ===================================== -->
+        <div id="portfolioGrid" class="mt100 mb100">
+            <div class="container">
+               <div class="row">
+                    <h3 class="text-center fs-40 font-size-light mb20">                          
+                        Latest Works
+                        <small class="heading-desc text-lowercase alpha7">
+                            Some amazing works
+                        </small>
+                    </h3>   
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        <div class="portfolio center-block">
+
+                            <div class="portfolio-item col-md-4 col-sm-4 col-xs-4 wordpress woocommerce" data-category="">
+                                <a href="assets/img/portfolio/preview/new-1.jpg" class="magnific-popup">
+                                    <span class="glyphicon glyphicon-search hover-bounce-out"></span>
+                                </a>
+                                <img src="assets/img/portfolio/thumbs/new-img-550x350-1.jpg" alt="portfolio woocommerce" class="img-responsive animated" data-animation="zoomIn" data-animation-delay="100">                                
+                            </div>
+                            
+                            <div class="portfolio-item col-md-4 col-sm-4 col-xs-4  joomla html">
+                                <a href="assets/img/portfolio/preview/new-2.jpg" class="magnific-popup">
+                                    <span class="glyphicon glyphicon-search hover-bounce-out"></span>
+                                </a>
+                                <img src="assets/img/portfolio/thumbs/new-img-550x350-3.jpg" alt="portfolio woocommerce" class="img-responsive animated" data-animation="zoomIn" data-animation-delay="200">
+                            </div>
+                            
+                            <div class="portfolio-item col-md-4 col-sm-4 col-xs-4  wordpress joomla">
+                                <a href="assets/img/portfolio/preview/img-370x165-1.jpg" class="magnific-popup">
+                                    <span class="glyphicon glyphicon-search hover-bounce-out"></span>
+                                </a>
+                                <img src="assets/img/portfolio/thumbs/new-img-550x350-2.jpg" alt="portfolio woocommerce" class="img-responsive animated" data-animation="zoomIn" data-animation-delay="300">
+                            </div>
+                            
+                            <div class="portfolio-item col-md-4 col-sm-4 col-xs-4  html wordpress">
+                                <a href="assets/img/portfolio/preview/new-4.jpg" class="magnific-popup">
+                                    <span class="glyphicon glyphicon-search hover-bounce-out"></span>
+                                </a>
+                                <img src="assets/img/portfolio/thumbs/new-img-550x350-4.jpg" alt="portfolio woocommerce" class="img-responsive animated" data-animation="zoomIn" data-animation-delay="400">
+                            </div>
+                            
+                            <div class="portfolio-item col-md-4 col-sm-4 col-xs-4  html joomla wordpress">
+                                <a href="assets/img/portfolio/preview/new-6.jpg" class="magnific-popup">
+                                    <span class="glyphicon glyphicon-search hover-bounce-out"></span>
+                                </a>
+                                <img src="assets/img/portfolio/thumbs/new-img-550x350-6.jpg" alt="portfolio woocommerce" class="img-responsive animated" data-animation="zoomIn" data-animation-delay="500">
+                            </div>
+                            
+                            <div class="portfolio-item col-md-4 col-sm-4 col-xs-4 html joomla">
+                                <a href="assets/img/portfolio/preview/new-5.jpg" class="magnific-popup">
+                                    <span class="glyphicon glyphicon-search hover-bounce-out"></span>
+                                </a>
+                                <img src="assets/img/portfolio/thumbs/new-img-550x350-5.jpg" alt="portfolio woocommerce" class="img-responsive animated" data-animation="zoomIn" data-animation-delay="600">
+                            </div>
+       
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- Testimonial Area
+        ===================================== -->
+        <div id="testimonial" class="mb100">
+            <div class="container-fluid">
+               <div class="row">
+                    <h3 class="text-center fs-40 font-size-light mb20">                          
+                        Testimonials
+                        <small class="heading-desc text-lowercase alpha7">
+                            Some words from our clients
+                        </small>
+                    </h3>   
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div id="owlSectionThreeItem" class="owl-carousel">
+                                    
+                                    <!-- Testimonial Item -->
+                                    <div class="testimonial testimonial-triangle-isosceles bottom-left">
+                                        <div class="testimonial-body">
+                                            <p>
+                                                Pasific template is the best template so far. So easy to customize and clean code. Recommended!
+                                            </p>
+                                        </div>
+                                        <div class="testimonial-footer">
+                                            <img src="assets/img/other/photo-1.jpg" alt="testimonial author" class="img-responsive img-circle">
+                                            <i class="fa fa-quote-left"></i>
+                                            Martin Smith <a href="#">Smashingmagazine.com   </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Testimonial Item -->
+                                    <div class="testimonial testimonial-triangle-isosceles bottom-left">
+                                        <div class="testimonial-body">
+                                            <p>
+                                               Quisque mollis lacus augue, a hendrerit leo tristique vitae. Mauris non ipsum molestie sagittis elit ac vulputate odio.
+                                            </p>
+                                        </div>
+                                        <div class="testimonial-footer">
+                                            <img src="assets/img/other/photo-4.jpg" alt="testimonial author" class="img-responsive img-circle">
+                                            <i class="fa fa-quote-left"></i>
+                                            John Doe <a href="#">Smashingmagazine.com   </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Testimonial Item -->
+                                    <div class="testimonial testimonial-triangle-isosceles bottom-left">
+                                        <div class="testimonial-body">
+                                            <p>
+                                                Quisque mollis lacus augue, a hendrerit leo tristique vitae. Mauris non ipsum molestie sagittis elit ac vulputate odio.
+                                            </p>
+                                        </div>
+                                        <div class="testimonial-footer">
+                                            <img src="assets/img/other/photo-2.jpg" alt="testimonial author" class="img-responsive img-circle">
+                                            <i class="fa fa-quote-left"></i>
+                                            Steve Austin <a href="#">Smashingmagazine.com   </a>
+                                        </div>
+                                    </div>
+         
+                                </div>
+
+                            </div>
+
+                        </div><!-- row end -->
+                    </div><!-- container end -->
+                </div><!-- row end -->
+            </div><!-- container-fluid end -->
+        </div><!-- section testimonial end -->
+           
+        
+        
+        <!-- Info Area
+        ===================================== -->
+        <div class=" pb50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="color-black fs-40 font-size-light font-open-sans">
+                            Are you ready to be success ?
+                        </h2>
+                        <p class="color-dark mt20">
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.<br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit commodi pariatur magni omnis reiciendis architecto.
+                        </p>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <a href="#" class="button button-circle button-lg button-green hover-ripple-out animated" data-animation="zoomIn" data-animation-delay="100">Get Started Today</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- Clients Area
+        ===================================== -->
+        <div id="client" class="mt25">
+            <div class="container bt-solid-1">
+                <div class="row pt60">
+                          
+                    <div class="col-md-2 col-sm-3 col-xs-4">
+                        <img src="assets/img/brand/paypal-gray.png" alt="client logo" class="img-responsive center-block animated" data-animation="fadeIn" data-animation-delay="350">
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-4">
+                        <img src="assets/img/brand/evernote-gray.png" alt="client logo" class="img-responsive center-block animated" data-animation="fadeIn" data-animation-delay="300">
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-4">
+                        <img src="assets/img/brand/microsoft-gray.png" alt="client logo" class="img-responsive center-block animated" data-animation="fadeIn" data-animation-delay="250">
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-4">
+                        <img src="assets/img/brand/smashing-gray.png" alt="client logo" class="img-responsive center-block animated" data-animation="fadeIn" data-animation-delay="200">
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-4">
+                        <img src="assets/img/brand/guardian-gray.png" alt="client logo" class="img-responsive center-block animated" data-animation="fadeIn" data-animation-delay="150">
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-4">
+                        <img src="assets/img/brand/linkedin-gray.png" alt="client logo" class="img-responsive center-block animated" data-animation="fadeIn" data-animation-delay="100">
+                    </div>  
+          
+                </div>                
+            </div>
+        </div>        
+        
+        
+        <!-- Footer Area
+        =====================================-->
+        <footer id="footer" class="footer-one center-block pt50 pb25 ">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-2 col-xs-12 mb25">
+                        <div class="navbar-brand-footer center-block">Pasific</div>
+                        <div class="copyright center-block">&copy; 2016. All rights reserved.</div>
+                    </div>
+                    
+                    <div class="col-md-8 col-xs-12 text-center">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="bb-solid-1">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Price</a></li>
+                                    <li><a href="#">Feature</a></li>
+                                    <li><a href="#">Works</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-sm-12 mt25">
+                                <ul>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Knowledgebase</a></li>
+                                    <li><a href="#">Term of Service</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-2 col-xs-12">
+                        <div class="social-container">
+                            <ul class="footer-social text-center">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </footer>
+       
+
+        <!-- JQuery Core
+        =====================================-->
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/core/bootstrap-3.3.7.min.js"></script>
+        
+        <!-- Magnific Popup
+        =====================================-->
+        <script src="assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/magnific-popup/magnific-popup-zoom-gallery.js"></script>
+        
+        <!-- JQuery Main
+        =====================================-->
+        <script src="assets/js/main/jquery.appear.js"></script>
+        <script src="assets/js/main/isotope.pkgd.min.js"></script>
+        <script src="assets/js/main/parallax.min.js"></script>
+        <script src="assets/js/main/jquery.countTo.js"></script>
+        <script src="assets/js/main/owl.carousel.min.js"></script>
+        <script src="assets/js/main/jquery.sticky.js"></script>
+        <script src="assets/js/main/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/main/main.js"></script>
+        
+    </body>
+</html>

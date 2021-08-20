@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row mt20 mb30">
                 <div class="col-md-6 text-left">
-                    <h3 class="color-light text-uppercase">Asesmen {{object.type}} <small class="color-light alpha7">{{object.title}}</small></h3>
+                    <h3 class="color-light text-uppercase animated" data-animation="fadeInUp" data-animation-delay="100">Asesmen {{object.type}} <small class="color-light alpha7">{{object.title}}</small></h3>
                 </div>
                 <div class="col-md-6 text-right pt35">
                     <ul class="breadcrumb">
@@ -33,32 +33,64 @@
         <div class="container">
             <div class="row blog-masonry-3col">
                 <!-- Blog Item -->
-                <div class="col-md-12 col-sm-12 col-xs-12 blog-masonry-item mb25">
+                <div class="col-md-8 col-sm-12 col-xs-12 blog-masonry-item mb25">
                     <div class="blog-one"> 
                         <div class="blog-one-attrib">                          
                             <span class="blog-category">Waktu Tersisa: <span id="remaining">{{expected|remaining_timer}}</span></span>                                                          
                         </div>
                         <div class="blog-one-body">
-                            <h4 class="blog-title"><a href="#">Pastikan semua soal sudah dijawab dengan baik sebelum mengirim jawaban</a></h4>
+                            <h4 class="blog-title">Daftar Jawaban</h4>
+                            <table class="table">
+                                <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col">Keterangan</th>
+                                </tr>
+                                
+                                {% for field in form %}
+                                    <tr>
+                                        <td>{{forloop.counter}}</td>
+                                        <td>
+                                            {% if field.value %}
+                                                <a href="{% url 'test:assessment' type=object.type.lower no=forloop.counter %}">Jawaban Tersimpan</a>
+                                            {% else %}
+                                                <a href="{% url 'test:assessment' type=object.type.lower no=forloop.counter %}">Belum Terisi</a>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                
+                            </table>
+                            <hr>
+                            <p class="lead">Pastikan semua jawaban sudah terisi, jawaban yang sudah terkirim tidak dapat dirubah!</p>
                         </div>
+                        <div class="blog-one-footer">
+                            <a class="button button-warning" href="{% url 'test:assessment' type=object.type.lower %}">Kembali Mengisi</a>
+                            <a class="button button-primary" href="{% url 'test:tester' type=object.type.lower %}">Simpan dan Kirim Jawaban</a>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 blog-masonry-item mb25">
+                    <div class="blog-one"> 
                         <div class="blog-one-body">
-                            <p>Pastikan semua soal sudah dijawab dengan baik sebelum mengirim jawaban.</p>
+                            <h4 class="blog-title"><a href="#">Direktori Soal</a></h4>
+                            <hr>
                             <p>
-                            {% include 'includes/assessment_nav.html' %}
+                                {% for field in form %}
+                                    <a class="button
+                                    {% if field.value %}
+                                        button-success
+                                    {% else %}
+                                        button-gray
+                                    {% endif %}" 
+                                    style="min-width:4.8em" href="{% url 'test:assessment' type=object.type.lower no=forloop.counter %}">
+                                        {{forloop.counter}}
+                                    </a>
+                                {% endfor %}
                             </p>
                         </div>
                         <div class="blog-one-footer">
-                            <a class="button button-warning" href="{% url 'test:assessment' type=object.type.lower %}">Kembali ke Awal</a>
-                            <a class="button button-danger" href="{% url 'test:tester' type=object.type.lower %}">Kirim dan Selesai</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row blog-masonry-3col">
-                <!-- Blog Item -->
-                <div class="col-md-12 col-sm-12 col-xs-12 blog-masonry-item mb25">
-                    <div class="blog-one"> 
+                            <a class="button button-warning" href="{% url 'test:assessment' type=object.type.lower %}">Kembali Mengisi</a>                              
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,7 +125,7 @@
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("remaining").innerHTML = "EXPIRED";
+            document.getElementById("remaining").innerHTML = "Habis";
         }
         }, 1000);
     </script>

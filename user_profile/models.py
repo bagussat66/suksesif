@@ -32,7 +32,7 @@ class Village(models.Model):
     def __str__(self):
         return f"{self.district.name}: {self.name}"
 
-class Address(models.Model):
+class ShippingAddress(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
     address = models.CharField(max_length=255,null=True)
     zip_code = models.CharField(max_length=100,null=True)

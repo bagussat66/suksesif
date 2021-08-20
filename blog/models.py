@@ -49,6 +49,7 @@ class Post(models.Model):
     image = models.ImageField(blank=True,null=True)
     image_caption = models.CharField(max_length=120)
     comment_disabled = models.BooleanField(default=False)
+    hidden = models.BooleanField(default=False)
     timestamp = models.DateTimeField(auto_now_add=True,blank=True)
     tags = models.ManyToManyField(Tag,blank=True)
     comments = models.ManyToManyField(Comment,blank=True)

@@ -1,5 +1,6 @@
 {% load static %}
 
+{% load humanize %}
 
 <!-- Blog Area
 ===================================== -->
@@ -9,93 +10,52 @@
         <!-- title start -->
         <div class="row text-center mb25">
             <h1 class="font-size-normal">
-                <small>Our Blog</small>
-                We Have Freebies, News, Tutorial, etc.
+                <small>Postingan Blog Terbaru</small>
+                {{blog.title}}
                 <small class="heading heading-solid center-block"></small>
             </h1>
         </div>
         <!-- title end -->
         
         <div class="row">
-            
-            <!-- blog post start -->
-            <div class="col-md-4 col-sm-6 col-xs-12 mb50">
-                <div class="blog-one">
-                    <div class="blog-one-header">
-                        <img src="assets/img/blog/img-blog-2.jpg" alt="image blog" class="img-responsive">
-                    </div>
-                    <div class="blog-one-attrib">                                
-                        <img src="assets/img/other/photo-1.jpg" alt="photo blog" class="blog-author-photo">
-                        <span class="blog-author-name">Harry Boo</span>
-                        <span class="blog-date">PEB. 14 2016</span>                                                           
-                    </div>
-                    <div class="blog-one-body">
-                        <h4 class="blog-title"><a href="#">Amazing Blog Post One</a></h4>
-                        <p class="">
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
-                        </p>
-                    </div>
-                    <div class="blog-one-footer">
-                        <a href="#">Read More</a>
-                        <i class="fa fa-heart"></i>59 Likes
-                        <i class="fa fa-comments"></i><a href="#">120 Comments</a>
-                    </div>
-                </div>
-            </div>
-            <!-- blog post end -->
-            
-            <!-- blog post start -->
-            <div class="col-md-4 col-sm-6 col-xs-12 mb50">
-                <div class="blog-one">
-                    <div class="blog-one-header">
-                        <img src="assets/img/blog/img-blog-4.jpg" alt="image blog" class="img-responsive">
-                    </div>
-                    <div class="blog-one-attrib">                                
-                        <img src="assets/img/other/photo-4.jpg" alt="photo blog" class="blog-author-photo">
-                        <span class="blog-author-name">Melanie Boo</span>
-                        <span class="blog-date">PEB. 14 2016</span>                                                           
-                    </div>
-                    <div class="blog-one-body">
-                        <h4 class="blog-title"><a href="#">Amazing Blog Post One</a></h4>
-                        <p class="">
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
-                        </p>
-                    </div>
-                    <div class="blog-one-footer">
-                        <a href="#">Read More</a>
-                        <i class="fa fa-heart"></i>59 Likes
-                        <i class="fa fa-comments"></i><a href="#">120 Comments</a>
+            {% for object in object_list %}
+                <!-- Blog Item -->
+                <div class="col-md-4 col-sm-6 col-xs-12 mb50">
+                    <div class="blog-one">
+                        <div class="blog-one-header">
+                            {% if object.image %}
+                                <img src="{{object.image.url}}" class="img-responsive" alt="image blog">
+                            {% else %}
+                                <img src="http://openmindspsychology.co.uk/wp-content/uploads/2020/07/psychology-of-the-mind.png" class="img-responsive" alt="image blog">
+                            {% endif %}
+                        </div>
+                        <div class="blog-one-attrib">                                
+                            <img src="https://lh6.googleusercontent.com/proxy/O7-JEF_MpbuFPhknkvO_IUngr0XkOlQ8B7wK8EFi3LRSKDv_vS0DHdR1wlgi4pe8_b2sU4el-7ELsdzPD7IUSFlXHOIq=s0-d" alt="photo blog" class="blog-author-photo">
+                            <span class="blog-author-name">{{object.user.username}}</span>                                   
+                            <span class="blog-date">{{object.timestamp|naturalday}} </span>                                                          
+                        </div>
+                        <div class="blog-one-body">
+                            <h4 class="blog-title"><a href="#">{{object.title}}</a></h4>
+                            <p class="lead">
+                                {{object.subtitle}}
+                            </p>
+                        </div>
+                        <div class="blog-one-footer">
+                            <a href="#">Read More</a>
+                            <i class="fa fa-heart"></i>X Likes
+                            <i class="fa fa-comments"></i><a href="#">X Comments</a>                                 
+                                
+                        </div>
                     </div>
                 </div>
+            {% endfor %}
+
+        </div><!-- row end -->   
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a class="button-o button-md button-dark hover-ripple-out mt25" href="{% url 'blog:list' %}">Lebih Banyak <i class="fa fa-arrow"></i> </a>
             </div>
-            <!-- blog post end -->
-            
-            <!-- blog post start -->                    
-            <div class="col-md-4 col-sm-6 col-xs-12 mb50">
-                <div class="blog-one">
-                    <div class="blog-one-header">
-                        <img src="assets/img/blog/img-blog-3.jpg" alt="image blog" class="img-responsive">
-                    </div>
-                    <div class="blog-one-attrib">                                
-                        <img src="assets/img/other/photo-2.jpg" alt="photo blog" class="blog-author-photo">
-                        <span class="blog-author-name">Harry Boo</span>
-                        <span class="blog-date">PEB. 14 2016</span>                                                           
-                    </div>
-                    <div class="blog-one-body">
-                        <h4 class="blog-title"><a href="#">Amazing Blog Post One</a></h4>
-                        <p class="">
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
-                        </p>
-                    </div>
-                    <div class="blog-one-footer">
-                        <a href="#">Read More</a>
-                        <i class="fa fa-heart"></i>59 Likes
-                        <i class="fa fa-comments"></i><a href="#">120 Comments</a>
-                    </div>
-                </div>
-            </div>
-            <!-- blog post end -->                   
-            
-        </div><!-- row end -->                
+        </div>
+                        
     </div><!-- container end -->
 </div><!-- section blog end -->

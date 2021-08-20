@@ -3,8 +3,6 @@ from django.db.models.fields import CharField
 from django.forms.widgets import TextInput
 # from django_address.models
 
-from .models import Address
-
 
 PAYMENT_CHOICES = (
     ('Q','QRIS'),

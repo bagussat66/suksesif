@@ -1,5 +1,5 @@
 from test_core.models import TYPE_CHOICES
-from user_profile.models import Address
+from user_profile.models import ShippingAddress
 from django.db import models
 from django.db.models.deletion import SET_NULL
 from django.urls import reverse
@@ -100,7 +100,7 @@ class Cart(models.Model):
     start_date= models.DateTimeField(auto_now_add=True)
     ordered_date = models.DateTimeField()
     ordered = models.BooleanField(default=False)
-    address = models.ForeignKey(Address,on_delete=SET_NULL,blank=True,null=True)
+    shipping_address = models.ForeignKey(ShippingAddress,on_delete=SET_NULL,blank=True,null=True)
     transaction = models.ForeignKey(Transaction,on_delete=SET_NULL,blank=True,null=True)
     coupon = models.ForeignKey(Coupon,on_delete=SET_NULL,blank=True,null=True)
 

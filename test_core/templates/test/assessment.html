@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row mt20 mb30">
                 <div class="col-md-6 text-left">
-                    <h3 class="color-light text-uppercase">Asesmen {{object.type}} <small class="color-light alpha7">{{object.title}}</small></h3>
+                    <h3 class="color-light text-uppercase animated" data-animation="fadeInUp" data-animation-delay="100">Asesmen {{object.type}} <small class="color-light alpha7">{{object.title}}</small></h3>
                 </div>
                 <div class="col-md-6 text-right pt35">
                     <ul class="breadcrumb">
@@ -40,13 +40,13 @@
                                 <span class="blog-category">Waktu Tersisa: <span id="remaining">{{expected|remaining_timer}}</span></span>                                                          
                             </div>
                             <div class="blog-one-body">
-                                <h4 class="blog-title"><a href="#">Soal ke {{no}} - {{max|add:"-1"}}</a></h4>
+                                <h4 class="blog-title">Soal ke {{no}} - {{max|add:"-1"}}</h4>
                                 {% csrf_token %}
                                 <p>{{form|crispy}}</p>
                             </div>
                             <div class="blog-one-footer">
                                 {% if no|add:"0" > 1 %}
-                                    <a class="button button-danger" href="{% url 'test:assessment' type=object.type.lower no=prev %}">Soal Sebelumnya</a>
+                                    <a class="button button-warning" href="{% url 'test:assessment' type=object.type.lower no=prev %}">Soal Sebelumnya</a>
                                 {% endif %}
                                 <button class="button button-primary" type="submit">Simpan dan Lanjut</button>                                
                             </div>
@@ -56,13 +56,32 @@
                 <div class="col-md-4 col-sm-12 col-xs-12 blog-masonry-item mb25">
                     <div class="blog-one"> 
                         <div class="blog-one-body">
-                            <h4 class="blog-title"><a href="#">Direktori Soal</a></h4>
+                            <h4 class="blog-title">Direktori Soal</h4>
+                            <hr>
                             <p>
-                            {% include 'includes/assessment_nav.html' %}
+                                {% for field in form %}
+                                    <a class="button
+                                    {% if field.value %}
+                                        {% if forloop.counter >= no|add:'0' and forloop.counter < max|add:'0'%}
+                                            button-warning
+                                        {% else %}
+                                            button-success
+                                        {% endif %}
+                                    {% else %}
+                                        {% if forloop.counter >= no|add:'0' and forloop.counter < max|add:'0'%}
+                                            button-blue
+                                        {% else %}
+                                            button-gray
+                                        {% endif %}
+                                    {% endif %}" 
+                                    style="min-width:4.8em" href="{% url 'test:assessment' type=object.type.lower no=forloop.counter %}">
+                                        {{forloop.counter}}
+                                    </a>
+                                {% endfor %}
                             </p>
                         </div>
                         <div class="blog-one-footer">
-                            <a class="button button-danger" href="{% url 'test:assessment' type=object.type.lower no=0%}">Akhiri Tes</a>                                
+                            <a class="button button-warning" href="{% url 'test:assessment' type=object.type.lower no=0%}">Menuju Akhir Tes</a>                                
                         </div>
                     </div>
                 </div>

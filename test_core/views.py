@@ -81,18 +81,7 @@ class TestPageView(View):
         tester = load_tester(type,self.request.session)
         test_attempt,create = TestAttempt.objects.get_or_create(tester=tester,type=type,finished=False)
 
-        while create == False:
-            print("Expected:")
-            print(test_attempt.expected)
-            print("Now:")
-            print(timezone.now())
-            if (test_attempt.expected.replace(tzinfo=None)<timezone.now().replace(tzinfo=None)):
-                test_attempt.finished = True
-                print("Set to Finished")
-                test_attempt.save()
-                test_attempt,create = TestAttempt.objects.get_or_create(tester=tester,type=type,finished=False)
-            else:
-                break
+        
         initial = {}
 
         if create:
@@ -108,7 +97,7 @@ class TestPageView(View):
                 initial[key]=answered_question.answer
                 i+=1
 
-        return test_attempt,initial
+        return test_attempt,create,initial
 
     def collect_answers(self,cleaned_data,*args,**kwargs):
         answers = []
@@ -125,6 +114,7 @@ class TestPageView(View):
     def get(self,*args,**kwargs):
         type = self.kwargs['type'].upper()
         no = self.kwargs['no'] if self.kwargs['no'] else '1'
+        
 
         if type=='MBTI':
             form_class = AnswerMbtiForm
@@ -140,7 +130,12 @@ class TestPageView(View):
             messages.info(self.request,"Test tidak ditemukan.")
             return redirect("core:home")
 
-        test_attempt,initial = self.load()
+        test_attempt,create,initial = self.load()
+
+        if create == False and (test_attempt.expected.replace(tzinfo=None) < timezone.now().replace(tzinfo=None)):
+            messages.info(self.request,"Waktu test habis.")
+            return redirect("test:tester",type=self.kwargs['type'])
+            
 
         max=int(no)+self.paginate_by
 
@@ -180,7 +175,12 @@ class TestPageView(View):
             messages.info(self.request,"Test tidak ditemukan.")
             return redirect("core:home")
         
-        test_attempt,initial = self.load()
+        test_attempt,create,initial = self.load()
+
+        if create == False and (test_attempt.expected.replace(tzinfo=None) < timezone.now().replace(tzinfo=None)):
+            messages.info(self.request,"Waktu test habis.")
+            return redirect("core:tester")
+
         max=int(no)+self.paginate_by
         form = form_class(self.request.POST,answered_questions=test_attempt.answered_questions.all(),no=no,max=max)
         

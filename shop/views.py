@@ -20,7 +20,7 @@ from django.views.generic.edit import FormView
 from .forms import CheckoutForm
 
 # from .forms import ProductModelForm
-from .models import Address, Coupon, Product, CartProduct, Cart, Transaction,CATEGORY_CHOICES
+from .models import ShippingAddress, Coupon, Product, CartProduct, Cart, Transaction,CATEGORY_CHOICES
 
 import string    
 import random  
@@ -67,7 +67,7 @@ class CheckoutView(LoginRequiredMixin,FormView):
 
     template_name = 'checkout.html'
     form_class = CheckoutForm
-    model = Address
+    model = ShippingAddress
 
     def form_valid(self,form):
         print(form.cleaned_data)
@@ -77,11 +77,11 @@ class CheckoutView(LoginRequiredMixin,FormView):
             messages.info(self.request,"Tidak ada pemesanan aktif.")
             return redirect("core:home")
         
-        address = Address(user=self.request.user)
-        address.address = form.cleaned_data.get('address')
-        address.zip_code = form.cleaned_data.get('zip_code')
-        address.save()
-        order.address = address
+        shipping_address = ShippingAddress(user=self.request.user)
+        shipping_address.address = form.cleaned_data.get('address')
+        shipping_address.zip_code = form.cleaned_data.get('zip_code')
+        shipping_address.save()
+        order.address = shipping_address
         order.save()
         messages.info(self.request,"Informasi Pembayaran sukses tersimpan.")
         return redirect("shop:transaction",transaction_option=form.cleaned_data.get('transaction_option'))
@@ -228,44 +228,3 @@ def add_coupon_order(request,code):
     except ObjectDoesNotExist:
         messages.error(request,"Tidak ada pemesanan aktif.")
         return redirect("core:home")
-    
-
-
-
-# class ProductListView(ListView):
-#     template_name = 'product/list.html'
-#     queryset = Product.objects.all()
-
-# class ProductDetailView(DetailView):
-#     template_name = 'product/detail.html'
-#     queryset = Product.objects.all()
- 
-# class ProductCreateView(CreateView):
-#     template_name = 'product/create.html'
-#     form_class = ProductModelForm
-#     queryset = Product.objects.all()
-
-#     def get_success_url(self):
-#         return reverse('product:product-list')
-
-#     def form_valid(self,form):
-#         print(form.cleaned_data)
-#         return super().form_valid(form)
-
-# class productUpdateView(UpdateView):
-#     template_name = 'product/update.html'
-#     form_class = ProductModelForm
-#     queryset = Product.objects.all()
-#     def get_success_url(self):
-#         return reverse('product:product-list')
-
-#     def form_valid(self,form):
-#         print(form.cleaned_data)
-#         return super().form_valid(form)
-
-# class productDeleteView(DeleteView):
-#     template_name = 'product/delete.html'
-#     queryset = Product.objects.all()
-
-#     def get_success_url(self):
-#         return reverse('product:product-list')

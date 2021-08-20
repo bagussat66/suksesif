@@ -15,9 +15,8 @@
                 </div>
                 <div class="col-md-6 text-right pt35">
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Blog Page</a></li>
-                        <li>Blog Post</li>
+                        <li><a href="{% url 'core:home' %}">Home</a></li>
+                        <li>Halaman Blog</li>
                     </ul>
                 </div>
             </div>
@@ -57,12 +56,12 @@
                                 {% if object.image %}
                                     <img src="{{object.image.url}}" class="img-responsive" alt="image blog">
                                 {% else %}
-                                    <img src="assets/img/blog/img-blog-1.jpg" class="img-responsive" alt="image blog">
+                                    <img src="http://openmindspsychology.co.uk/wp-content/uploads/2020/07/psychology-of-the-mind.png" class="img-responsive" alt="image blog">
                                 {% endif %}
                             </div>
                             <div class="blog-one-attrib">                                
                                 <img src="https://lh6.googleusercontent.com/proxy/O7-JEF_MpbuFPhknkvO_IUngr0XkOlQ8B7wK8EFi3LRSKDv_vS0DHdR1wlgi4pe8_b2sU4el-7ELsdzPD7IUSFlXHOIq=s0-d" alt="photo blog" class="blog-author-photo">
-                                <span class="blog-author-name">{{object.user.name}}</span>                                                           
+                                <span class="blog-author-name">{{object.user.username}}</span>                                                           
                                 <span class="blog-category bg-green"><a href="#">{{object.get_category_display}}</a></span> 
                                 <span class="blog-date">{{object.timestamp|naturalday}} | </span>                                                          
                             </div>

@@ -41,24 +41,26 @@
                         <div class="blog-one-body">
                             <h4 class="blog-title">Daftar Jawaban</h4>
                             <table class="table">
-                                <tr>
-                                    <th scope="col">No</th>
-                                    <th scope="col">Keterangan</th>
-                                </tr>
-                                
-                                {% for field in form %}
+                                <thead>
                                     <tr>
-                                        <td>{{forloop.counter}}</td>
-                                        <td>
-                                            {% if field.value %}
-                                                <a href="{% url 'test:assessment' type=object.type.lower no=forloop.counter %}">Jawaban Tersimpan</a>
-                                            {% else %}
-                                                <a href="{% url 'test:assessment' type=object.type.lower no=forloop.counter %}">Belum Terisi</a>
-                                            {% endif %}
-                                        </td>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Keterangan</th>
                                     </tr>
-                                {% endfor %}
-                                
+                                </thead>    
+                                <tbody>
+                                    {% for field in form %}
+                                        <tr>
+                                            <td>{{forloop.counter}}</td>
+                                            <td>
+                                                {% if field.value %}
+                                                    <a href="{% url 'test:assessment' type=object.type.lower no=forloop.counter %}">Jawaban Tersimpan</a>
+                                                {% else %}
+                                                    <a href="{% url 'test:assessment' type=object.type.lower no=forloop.counter %}">Belum Terisi</a>
+                                                {% endif %}
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
                             </table>
                             <hr>
                             <p class="lead">Pastikan semua jawaban sudah terisi, jawaban yang sudah terkirim tidak dapat dirubah!</p>

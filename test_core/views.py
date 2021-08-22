@@ -43,6 +43,12 @@ class TesterUpdateView(UpdateView):
             tester.user = self.request.user
 
         return tester
+    
+    def get_context_data(self, **kwargs):
+        context = super(TesterUpdateView, self).get_context_data(**kwargs)
+
+        context['object'] =  get_object_or_404(Product,type=self.kwargs['type'].upper())
+        return context
 
     def get_success_url(self):
         return reverse('test:result',kwargs={'type': self.kwargs['type']})

@@ -3,59 +3,30 @@
 ===================================== -->        
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
+        {% for carousel in carousel_list%}
+            <li data-target="#myCarousel" data-slide-to="{{forloop.counter0}}" class="{% ifequal forloop.counter0 0 %}active{% endifequal %}"></li>
+        {% endfor %}
     </ol>
         <div class="carousel-inner">
-            <div class="item carousel-img active" style="
-                background-image:
-                    linear-gradient(
-                    rgba(0, 0, 0, 0.3), 
-                    rgba(0, 0, 0, 0.3)
-                    ),
-                    url({{carousel.0.image.url}});
-                background-position: center top;">
-                <div class="container">
-                    <div class="carousel-caption animated" data-animation="bounceInLeft" data-animation-delay="100">
-                        {% autoescape off %}
-                        {{carousel.0.content}}
-                        {% endautoescape off %}
+            {% for carousel in carousel_list%}
+                <div class="item carousel-img {% ifequal forloop.counter0 0 %}active{% endifequal %}" style="
+                    background-image:
+                        linear-gradient(
+                        rgba(0, 0, 0, 0.3), 
+                        rgba(0, 0, 0, 0.3)
+                        ),
+                        url({{carousel.image.url}});
+                    background-position: center top;">
+                    <div class="container">
+                        <div class="carousel-caption animated" data-animation="{{carousel.animation}}" data-animation-delay="100">
+                            {% autoescape off %}
+                            {{carousel.content}}
+                            {% endautoescape off %}
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="item carousel-img" style="
-                background-image:
-                    linear-gradient(
-                    rgba(0, 0, 0, 0.3), 
-                    rgba(0, 0, 0, 0.3)
-                    ),
-                    url({{carousel.1.image.url}});
-                background-position: center top;">
-                <div class="container">
-                    <div class="carousel-caption mt-50 animated" data-animation="bounceInUp" data-animation-delay="100">
-                        {% autoescape off %}
-                        {{carousel.1.content}}
-                        {% endautoescape off %}
-                    </div>
-                </div>
-            </div>
-            <div class="item carousel-img" style="
-                background-image:
-                    linear-gradient(
-                    rgba(0, 0, 0, 0.3), 
-                    rgba(0, 0, 0, 0.3)
-                    ),
-                    url({{carousel.2.image.url}});
-                background-position: center top;">
-                <div class="container">
-                    <div class="carousel-caption animated" data-animation="bounceInLeft" data-animation-delay="100">
-                        {% autoescape off %}
-                        {{carousel.2.content}}
-                        {% endautoescape off %}
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
+
         </div>
     <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
     <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>

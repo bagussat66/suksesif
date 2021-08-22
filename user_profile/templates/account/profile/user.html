@@ -1,11 +1,180 @@
-{% extends "account/base.html" %}
+{% extends "base.html" %}
+{% load humanize %}
 
-{% load i18n %}
-
-{% block head_title %}{% trans "Account Inactive" %}{% endblock %}
+{% block head_title %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Account Inactive" %}</h1>
+    <!-- Subheader Area
+    ===================================== -->
+    <header class="bg-grad-stellar mt70">
+        <div class="container">
+            <div class="row mt20 mb30">
+                <div class="col-md-6 text-left">
+                    <h3 class="color-light text-uppercase animated" data-animation="fadeInUp" data-animation-delay="100"s>Profil Pengguna <small class="color-light alpha7">{{user.username}}</small></h3>
+                </div>
+                <div class="col-md-6 text-right pt35">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li>Profil</li>
+                        <li>{{user.username}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<p>{% trans "This account is inactive." %}</p>
+
+        <!-- Shop Area
+        ===================================== -->
+        <div id="shop" class="bg-light pt75 pb75">            
+            <div id="shop-item-details" class="container">
+                <div class="row">
+
+                    <!-- Item Photo
+                    ===================================== -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">                    
+                        <div class="center-block">
+                            <img class="img-responsive" alt="photo item active" src="https://icon-library.com/images/generic-profile-icon/generic-profile-icon-17.jpg" style="height:430px;width:350px;object-fit: cover"/> 
+                        </div>                    
+                    </div>
+
+                    <!-- Products Summary
+                    ===================================== -->
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <div class="shop-item-detail-description">
+
+                            <h3>{{user.username}}</h3>
+
+                            <div class="shop-item-detail-desc mt10 pt10 bt-dotted-1">
+
+                                <p><span style="width:120px;display:inline-block">Nama</span>Sample</p>
+                                <p><span style="width:120px;display:inline-block">Tanggal Lahir</span>Sample</p>
+                                <p><span style="width:120px;display:inline-block">Jenis Kelamin</span>Sample</p>
+                                <p><span style="width:120px;display:inline-block">Tanggal Lahir</span>Sample</p>
+                                <p><span style="width:120px;display:inline-block">Email</span>Sample</p>
+                                <p><span style="width:120px;display:inline-block">Nomor HP</span>Sample</p>
+
+                            </div>
+
+                            <div class="mt5 pt10 bt-dotted-1">
+                                Terakhir Login <span class="color-black strong">{{user.last_login|naturalday}}</span>
+                            </div>
+
+                            <div class="mt5">
+                                Bergabung Pada <span class="color-black strong">{{user.date_joined|naturalday}}</span>
+                            </div>
+
+                        </div>                    
+                    </div>
+
+                </div><!-- row end -->
+
+                <!-- Tab Content
+                ===================================== -->
+                <div class="row mt25">
+                    <div class="col-md-12">
+                        <ul class="nav nav-tabs">
+                          <li class="active"><a data-toggle="tab" href="#item_description" class="text-uppercase">Deskripsi Diri</a></li>
+                          <li><a data-toggle="tab" href="#shop_item_additional_information" class="text-uppercase">Alamat Pengiriman</a></li>
+                          <li><a data-toggle="tab" href="#shop_item_others" class="text-uppercase">Akun Sosial Media</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <!-- tab content item description start -->
+                            <div id="shop_item_description" class="tab-pane fade in active">
+                                <h4>Sample Lorem Ipsum Text</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. Sed quam odio, tempus ac, aliquam molestie, varius ac, tellus. Vestibulum ut nulla aliquam risus rutrum interdum. Pellentesque lorem. Curabitur sit amet erat quis risus feugiat viverra. Pellentesque augue justo, sagittis et, lacinia at, venenatis non, arcu. Nunc nec libero. In cursus dictum risus. Etiam tristique nisl.                                    
+                                </p>
+
+                                <ul class="icon-list">
+                                        <li><i class="fa fa-check color-green"></i>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed at ante. Mauris eleifend</li>
+                                        <li><i class="fa fa-check color-green"></i>Quam a vulputate dictum, massa quam dapibus leo</li>
+                                        <li><i class="fa fa-check color-green"></i>Vestibulum ut nulla aliquam risus rutrum interdum. Pellentesque lorem</li> 
+                                    </ul>
+
+                                <h5>Sample Lorem Ipsum Text</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. Sed quam odio, tempus ac, aliquam molestie, varius ac, tellus. Vestibulum ut nulla aliquam risus rutrum interdum. Pellentesque lorem. Curabitur sit amet erat quis risus feugiat viverra. Pellentesque augue justo, sagittis et, lacinia at, venenatis non, arcu. Nunc nec libero. In cursus dictum risus. Etiam tristique nisl.
+                                </p>
+                            </div>
+                            <!-- tab content item description end -->
+
+                            <!-- tab content additional information start -->
+                            <div id="shop_item_additional_information" class="tab-pane fade">
+                                <div class="row">
+                                    <!-- Spec Start -->
+                                    <div class="col-md-2 col-sm-2 col-xs-4 bb-solid-1 pb10 pt10"><span class="pull-right">Collection:</span></div>
+                                    <div class="col-md-10 col-sm-10 col-xs-8 bb-solid-1 pb10 pt10"><strong class="pull-left">Collection Title</strong></div>
+                                    <!-- Spec End -->
+                                    <!-- Spec Start -->
+                                    <div class="col-md-2 col-sm-2 col-xs-4 bb-solid-1 pb10 pt10"><span class="pull-right">Fabrication:</span></div>
+                                    <div class="col-md-10 col-sm-10 col-xs-8 bb-solid-1 pb10 pt10"><strong class="pull-left">Awesome Fabrication</strong></div>
+                                    <!-- Spec End -->
+                                    <!-- Spec Start -->
+                                    <div class="col-md-2 col-sm-2 col-xs-4 bb-solid-1 pb10 pt10"><span class="pull-right">Style:</span></div>
+                                    <div class="col-md-10 col-sm-10 col-xs-8 bb-solid-1 pb10 pt10"><strong class="pull-left">Jeans Jacket</strong></div>
+                                    <!-- Spec End -->
+                                    <!-- Spec Start -->
+                                    <div class="col-md-2 col-sm-2 col-xs-4 bb-solid-1 pb10 pt10"><span class="pull-right">Neckline:</span></div>
+                                    <div class="col-md-10 col-sm-10 col-xs-8 bb-solid-1 pb10 pt10"><strong class="pull-left">Round</strong></div>
+                                    <!-- Spec End -->
+                                    <!-- Spec Start -->
+                                    <div class="col-md-2 col-sm-2 col-xs-4 bb-solid-1 pb10 pt10"><span class="pull-right">Collar:</span></div>
+                                    <div class="col-md-10 col-sm-10 col-xs-8 bb-solid-1 pb10 pt10"><strong class="pull-left">Shirt</strong></div>
+                                    <!-- Spec End -->
+                                    <!-- Spec Start -->
+                                    <div class="col-md-2 col-sm-2 col-xs-4 bb-solid-1 pb10 pt10"><span class="pull-right">Sleeves:</span></div>
+                                    <div class="col-md-10 col-sm-10 col-xs-8 bb-solid-1 pb10 pt10"><strong class="pull-left">Short</strong></div>
+                                    <!-- Spec End -->
+                                    <!-- Spec Start -->
+                                    <div class="col-md-2 col-sm-2 col-xs-4 bb-solid-1 pb10 pt10"><span class="pull-right">Cuffs:</span></div>
+                                    <div class="col-md-10 col-sm-10 col-xs-8 bb-solid-1 pb10 pt10"><strong class="pull-left">Button</strong></div>
+                                    <!-- Spec End -->
+                                    <!-- Spec Start -->
+                                    <div class="col-md-2 col-sm-2 col-xs-4 bb-solid-1 pb10 pt10"><span class="pull-right">Pockets:</span></div>
+                                    <div class="col-md-10 col-sm-10 col-xs-8 bb-solid-1 pb10 pt10"><strong class="pull-left">	Button flap chest front seam</strong></div>
+                                    <!-- Spec End -->
+                                    <!-- Spec Start -->
+                                    <div class="col-md-2 col-sm-2 col-xs-4 bb-solid-1 pb10 pt10"><span class="pull-right">Hemline:</span></div>
+                                    <div class="col-md-10 col-sm-10 col-xs-8 bb-solid-1 pb10 pt10"><strong class="pull-left">Straight</strong></div>
+                                    <!-- Spec End -->
+                                    <!-- Spec Start -->
+                                    <div class="col-md-2 col-sm-2 col-xs-4 bb-solid-1 pb10 pt10"><span class="pull-right">Body Length:</span></div>
+                                    <div class="col-md-10 col-sm-10 col-xs-8 bb-solid-1 pb10 pt10"><strong class="pull-left">Approx. 22-1/2"L</strong></div>
+                                    <!-- Spec End -->
+                                    <!-- Spec Start -->
+                                    <div class="col-md-2 col-sm-2 col-xs-4 bb-solid-1 pb10 pt10"><span class="pull-right">Size Choices:</span></div>
+                                    <div class="col-md-10 col-sm-10 col-xs-8 bb-solid-1 pb10 pt10"><strong class="pull-left">Small, Medium, Large, and Extra Large</strong></div>
+                                    <!-- Spec End -->
+                                    <!-- Spec Start -->
+                                    <div class="col-md-2 col-sm-2 col-xs-4 bb-solid-1 pb10 pt10"><span class="pull-right">Content:</span></div>
+                                    <div class="col-md-10 col-sm-10 col-xs-8 bb-solid-1 pb10 pt10"><strong class="pull-left">55% cotton, 45% polyester</strong></div>
+                                    <!-- Spec End -->
+                                </div>
+
+
+                            </div>
+                            <!-- tab content additional information end -->
+
+                            <!-- tab content other start -->
+                            <div id="shop_item_others" class="tab-pane fade">
+                                <h5>Other Tab Content</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, libero, temporibus quam eaque numquam debitis excepturi assumenda necessitatibus dolore dolorum vero enim distinctio ipsa. Quod, dolorum, quidem eum quisquam facilis nam molestias et voluptas omnis quibusdam dignissimos illum ullam. 
+                                </p>
+                            </div>
+                            <!-- tab content other end -->
+
+                        </div><!-- tab content end-->
+                    </div><!-- col-md end -->
+                </div><!-- row end -->
+
+                
+            </div>
+        </div><!-- shop details end -->
+                
+      
+         
+
 {% endblock %}

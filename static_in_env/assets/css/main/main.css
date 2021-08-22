@@ -298,6 +298,7 @@ ul, ol {
     color: #747474;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 ol li {
     line-height: 25px;
@@ -341,6 +342,7 @@ ul.no-icon-list li {
     margin: 0;
     list-style: none;
 }
+
 /*  ----------------------------------------------------
 4. HEADING STYLE
 -------------------------------------------------------- */

@@ -3,6 +3,13 @@ from django.db.models.deletion import SET_NULL
 from django.urls import reverse
 from django.conf import settings
 
+ANIMATION_CHOICES=(
+    ('bounceInLeft','Left'),
+    ('bounceInRight','Right'),
+    ('bounceInUp','Up'),
+    ('bounceInDown','Down')
+)
+
 class Page(models.Model):
     purpose = models.CharField(max_length=120)
     user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE, null=True)
@@ -15,8 +22,9 @@ class Page(models.Model):
 class Carousel(models.Model):
     content = models.TextField(blank=True,null=True)
     image = models.ImageField(blank=True,null=True)
+    animation = models.CharField(choices=ANIMATION_CHOICES,max_length=40,default='')
     def __str__(self):
-        return self.content
+        return self.pk
 
 class Testimonial(models.Model):
     name = models.CharField(max_length=120)

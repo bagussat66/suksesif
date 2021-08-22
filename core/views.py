@@ -30,7 +30,7 @@ class HomeView(ListView):
 
         context['product_list'] = Product.objects.all()
         context['testimonial_list'] = Testimonial.objects.all()
-        context['carousel'] = Carousel.objects.all()
+        context['carousel_list'] = Carousel.objects.all()
         context['welcome'] = get_object_or_404(Page,purpose='welcome')
         context['testimonial'] = get_object_or_404(Page,purpose='testimonial')
         context['shop'] = get_object_or_404(Page,purpose='shop')
